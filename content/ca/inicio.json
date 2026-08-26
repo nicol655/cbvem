@@ -1,0 +1,45 @@
+{
+  "slug": "inicio",
+  "nav": [
+    { "label": "Inici", "href": "/" },
+    { "label": "Entrenaments", "href": "/entrenamientos" },
+    { "label": "Torneigs", "href": "/torneos" },
+    { "label": "Esdeveniments/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Club Beach Volley El Masnou",
+    "title": "Entrena beach volley amb estructura professional i comunitat real",
+    "subtitle": "CBVEM combina metodologia, seguiment i entorn competitiu perque milloris des del primer dia.",
+    "primaryCtaLabel": "Reservar per WhatsApp",
+    "secondaryCtaLabel": "Reservar prova gratuita"
+  },
+  "sections": [
+    {
+      "title": "Per que CBVEM",
+      "intro": "Una proposta pensada per a alumnes actuals i persones noves que volen comencar be.",
+      "cards": [
+        { "title": "Autoritat local", "description": "Posicionem el club com a referencia a El Masnou i rodalies." },
+        { "title": "Progressio clara", "description": "Cada jugador rep objectius concrets segons nivell i disponibilitat." },
+        { "title": "Ambient de club", "description": "Entrenes amb una comunitat activa i calendari compartit." }
+      ]
+    },
+    {
+      "title": "Tot en un sol lloc",
+      "intro": "Informacio essencial del club centralitzada i clara.",
+      "cards": [
+        { "title": "Horaris", "description": "Blocs d'entrenament per nivell i edat." },
+        { "title": "Camps i esdeveniments", "description": "Jornades intensives i activitats especials." },
+        { "title": "Torneigs", "description": "Competicions internes i externes amb informacio practica." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "CBVEM | Club Beach Volley El Masnou",
+    "description": "Entrenaments, torneigs i camps a El Masnou. Reserva la teva prova gratuita."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hola CBVEM, vull reservar una prova gratuita.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

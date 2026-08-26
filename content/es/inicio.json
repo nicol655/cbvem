@@ -1,0 +1,45 @@
+{
+  "slug": "inicio",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Entrenamientos", "href": "/entrenamientos" },
+    { "label": "Torneos", "href": "/torneos" },
+    { "label": "Eventos/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Club Beach Volley El Masnou",
+    "title": "Entrena beach volley con estructura profesional y comunidad real",
+    "subtitle": "CBVEM combina metodologia, seguimiento y entorno competitivo para que mejores con confianza desde el primer dia.",
+    "primaryCtaLabel": "Reservar por WhatsApp",
+    "secondaryCtaLabel": "Reservar prueba gratuita"
+  },
+  "sections": [
+    {
+      "title": "Por que CBVEM",
+      "intro": "Una propuesta pensada para alumnos actuales y nuevas personas que quieren empezar con buen criterio.",
+      "cards": [
+        { "title": "Autoridad local", "description": "Posicionamos al club como referencia de beach volley en El Masnou y alrededores." },
+        { "title": "Progresion clara", "description": "Cada jugador recibe objetivos concretos por nivel, ritmo y disponibilidad." },
+        { "title": "Ambiente de club", "description": "Entrenas con una comunidad activa que comparte calendario, retos y torneos." }
+      ]
+    },
+    {
+      "title": "Lo que podras gestionar desde aqui",
+      "intro": "Toda la informacion esencial del club en un solo sitio, sin depender de mensajes dispersos.",
+      "cards": [
+        { "title": "Horarios", "description": "Bloques de entreno por nivel, edad y formato." },
+        { "title": "Camps y eventos", "description": "Jornadas intensivas, clinics y actividades especiales." },
+        { "title": "Torneos", "description": "Competiciones internas y externas con toda la informacion practica." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "CBVEM | Club Beach Volley El Masnou",
+    "description": "Entrenamientos, torneos y camps de beach volley en El Masnou. Reserva tu prueba gratuita en CBVEM."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hola CBVEM, quiero reservar una prueba gratuita.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

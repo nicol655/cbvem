@@ -1,0 +1,6 @@
+{
+  "port": 7337,
+  "endpoint": "https://stitch.googleapis.com/mcp",
+  "apiKey": "REPLACE_WITH_STITCH_API_KEY",
+  "logPath": "D:/projects/cbvem/scripts/stitch-mcp-http-proxy.log"
+}

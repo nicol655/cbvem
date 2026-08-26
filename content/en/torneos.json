@@ -1,0 +1,45 @@
+{
+  "slug": "torneos",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Training", "href": "/entrenamientos" },
+    { "label": "Tournaments", "href": "/torneos" },
+    { "label": "Events/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "CBVEM Tournaments",
+    "title": "Compete to improve with real game mindset",
+    "subtitle": "Join internal and external tournaments with preparation that supports performance.",
+    "primaryCtaLabel": "Register via WhatsApp",
+    "secondaryCtaLabel": "Request details"
+  },
+  "sections": [
+    {
+      "title": "Competitive calendar",
+      "intro": "Tournament plans by objective and level so competition has a clear purpose.",
+      "cards": [
+        { "title": "Internal events", "description": "Club dates to practice match scenarios with structure." },
+        { "title": "Local circuit", "description": "Area tournaments to gain experience and game rhythm." },
+        { "title": "Special formats", "description": "Mixed and social competition formats for new integration." }
+      ]
+    },
+    {
+      "title": "Competition support",
+      "intro": "We prepare and review each tournament so every event becomes progress.",
+      "cards": [
+        { "title": "Pre-event prep", "description": "Tactical and communication blocks before competing." },
+        { "title": "Post-event analysis", "description": "Review strengths and adjustments for upcoming dates." },
+        { "title": "Club identity", "description": "Representing CBVEM with consistency and commitment." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Beach Volley Tournaments | CBVEM",
+    "description": "Tournament calendar and participation at CBVEM in El Masnou."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hi CBVEM, I want tournament information.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

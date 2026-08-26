@@ -1,0 +1,45 @@
+{
+  "slug": "eventos-camps",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Training", "href": "/entrenamientos" },
+    { "label": "Tournaments", "href": "/torneos" },
+    { "label": "Events/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Events and Camps",
+    "title": "Intensive experiences for faster progress and stronger community",
+    "subtitle": "Clinics, camps and special sessions with professional coaches.",
+    "primaryCtaLabel": "Ask via WhatsApp",
+    "secondaryCtaLabel": "Request a spot"
+  },
+  "sections": [
+    {
+      "title": "Available formats",
+      "intro": "Special activities for current players and newcomers.",
+      "cards": [
+        { "title": "Season camps", "description": "Intensive days with technique, tactics and game blocks." },
+        { "title": "Specialist clinics", "description": "Focused sessions with guest coaches." },
+        { "title": "Club events", "description": "Community activations that build local visibility." }
+      ]
+    },
+    {
+      "title": "Player value",
+      "intro": "Each format is designed to provide tangible progress and motivation.",
+      "cards": [
+        { "title": "Concentrated learning", "description": "Work on high-impact improvements quickly." },
+        { "title": "Sports networking", "description": "Meet players and future team partners." },
+        { "title": "Sustained motivation", "description": "Break routine and strengthen long-term consistency." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Beach Volley Events and Camps | CBVEM",
+    "description": "Discover CBVEM camps, clinics and special events in El Masnou."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hi CBVEM, I want events and camps information.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

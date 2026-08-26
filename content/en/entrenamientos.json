@@ -1,0 +1,45 @@
+{
+  "slug": "entrenamientos",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Training", "href": "/entrenamientos" },
+    { "label": "Tournaments", "href": "/torneos" },
+    { "label": "Events/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "CBVEM Training",
+    "title": "Level-based planning to accelerate your progress",
+    "subtitle": "Technical and tactical sessions focused on fundamentals, decisions and game transfer.",
+    "primaryCtaLabel": "Ask via WhatsApp",
+    "secondaryCtaLabel": "Request free trial"
+  },
+  "sections": [
+    {
+      "title": "Training structure",
+      "intro": "We organize sessions so you know what you train, why and what for.",
+      "cards": [
+        { "title": "Beginner level", "description": "Core technique, movement patterns and game reading basics." },
+        { "title": "Intermediate level", "description": "Technique consolidation and decision making in systems." },
+        { "title": "Advanced level", "description": "Competitive pace, tactical context and pair adjustments." }
+      ]
+    },
+    {
+      "title": "Methodology",
+      "intro": "Every block mixes technical drills and immediate transfer to game situations.",
+      "cards": [
+        { "title": "Load control", "description": "Balanced sessions to improve performance and avoid overload." },
+        { "title": "Useful feedback", "description": "Actionable corrections for the next repetition." },
+        { "title": "Follow-up", "description": "Short-term goals to keep focus and consistency." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Beach Volley Training | CBVEM",
+    "description": "Discover CBVEM training: levels, methodology and free trial in El Masnou."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hi CBVEM, I want training and schedule information.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

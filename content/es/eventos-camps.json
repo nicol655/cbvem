@@ -1,0 +1,45 @@
+{
+  "slug": "eventos-camps",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Entrenamientos", "href": "/entrenamientos" },
+    { "label": "Torneos", "href": "/torneos" },
+    { "label": "Eventos/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Eventos y Camps",
+    "title": "Experiencias intensivas para acelerar aprendizaje y comunidad",
+    "subtitle": "Clinics, camps y eventos con entrenadores profesionales para reforzar tecnica, tactica y motivacion.",
+    "primaryCtaLabel": "Consultar por WhatsApp",
+    "secondaryCtaLabel": "Solicitar plaza"
+  },
+  "sections": [
+    {
+      "title": "Formatos disponibles",
+      "intro": "Actividades especiales para jugadores actuales y personas nuevas con ganas de mejorar.",
+      "cards": [
+        { "title": "Camps de temporada", "description": "Jornadas intensivas con volumen tecnico y bloques de juego." },
+        { "title": "Clinics de especialistas", "description": "Sesiones focalizadas con entrenadores invitados." },
+        { "title": "Eventos de club", "description": "Activaciones para cohesionar comunidad y sumar visibilidad local." }
+      ]
+    },
+    {
+      "title": "Valor para el jugador",
+      "intro": "Cada experiencia esta pensada para generar mejora tangible y pertenencia al club.",
+      "cards": [
+        { "title": "Aprendizaje concentrado", "description": "En pocas sesiones, atacamos puntos de mayor impacto." },
+        { "title": "Networking deportivo", "description": "Conoces nuevos companeros y posibles parejas de juego." },
+        { "title": "Motivacion sostenida", "description": "Salir de la rutina impulsa continuidad y compromiso." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Eventos y Camps de Beach Volley | CBVEM",
+    "description": "Descubre camps, clinics y eventos especiales del Club Beach Volley El Masnou."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hola CBVEM, quiero informacion sobre eventos y camps.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

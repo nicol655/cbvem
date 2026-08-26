@@ -1,0 +1,45 @@
+{
+  "slug": "entrenamientos",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Entrenamientos", "href": "/entrenamientos" },
+    { "label": "Torneos", "href": "/torneos" },
+    { "label": "Eventos/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Entrenamientos CBVEM",
+    "title": "Planificacion por niveles para acelerar tu progreso",
+    "subtitle": "Sesiones tecnicas y tacticas con enfoque en fundamentos, decision y juego real.",
+    "primaryCtaLabel": "Consultar por WhatsApp",
+    "secondaryCtaLabel": "Solicitar prueba gratuita"
+  },
+  "sections": [
+    {
+      "title": "Estructura de trabajo",
+      "intro": "Organizamos el entrenamiento para que sepas que entrenas, por que y para que.",
+      "cards": [
+        { "title": "Nivel iniciacion", "description": "Bases tecnicas, desplazamientos y lectura inicial de juego." },
+        { "title": "Nivel intermedio", "description": "Consolidacion de tecnica y toma de decisiones en sistema." },
+        { "title": "Nivel avanzado", "description": "Ritmo competitivo, tactica situacional y ajustes por pareja." }
+      ]
+    },
+    {
+      "title": "Metodologia",
+      "intro": "Cada bloque combina ejercicios analiticos y transferencia inmediata al juego.",
+      "cards": [
+        { "title": "Control de carga", "description": "Sesiones equilibradas para mejorar rendimiento y prevenir sobrecarga." },
+        { "title": "Feedback util", "description": "Correcciones concretas para ejecutar mejor en la siguiente repeticion." },
+        { "title": "Seguimiento", "description": "Objetivos de corto plazo para mantener foco y continuidad." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Entrenamientos de Beach Volley | CBVEM",
+    "description": "Conoce los entrenamientos de CBVEM: niveles, metodologia y prueba gratuita en El Masnou."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hola CBVEM, quiero informacion de entrenamientos y horarios.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

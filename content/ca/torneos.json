@@ -1,0 +1,45 @@
+{
+  "slug": "torneos",
+  "nav": [
+    { "label": "Inici", "href": "/" },
+    { "label": "Entrenaments", "href": "/entrenamientos" },
+    { "label": "Torneigs", "href": "/torneos" },
+    { "label": "Esdeveniments/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Torneigs CBVEM",
+    "title": "Competicions per creixer amb mentalitat de joc",
+    "subtitle": "Participa en torneigs interns i externs amb planificacio esportiva.",
+    "primaryCtaLabel": "Inscripcio per WhatsApp",
+    "secondaryCtaLabel": "Demanar informacio"
+  },
+  "sections": [
+    {
+      "title": "Calendari competitiu",
+      "intro": "Definim competicions per objectiu i nivell.",
+      "cards": [
+        { "title": "Interns CBVEM", "description": "Dates de club per practicar escenaris reals." },
+        { "title": "Circuit local", "description": "Torneigs de la zona per guanyar experiencia." },
+        { "title": "Formats especials", "description": "Mix social i competitiu per integrar noves persones." }
+      ]
+    },
+    {
+      "title": "Suport competitiu",
+      "intro": "Preparem cada participacio per transformar-la en millora.",
+      "cards": [
+        { "title": "Preparacio previa", "description": "Bloc tactic i de comunicacio abans de competir." },
+        { "title": "Analisi posterior", "description": "Revisio d'encerts i ajustos per la seguent data." },
+        { "title": "Cultura de club", "description": "Identitat, respecte i compromis en cada torneig." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Torneigs de Beach Volley | CBVEM",
+    "description": "Calendari i participacio en torneigs de beach volley amb CBVEM."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hola CBVEM, vull informacio sobre torneigs.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

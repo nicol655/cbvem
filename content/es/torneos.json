@@ -1,0 +1,45 @@
+{
+  "slug": "torneos",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Entrenamientos", "href": "/entrenamientos" },
+    { "label": "Torneos", "href": "/torneos" },
+    { "label": "Eventos/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Torneos CBVEM",
+    "title": "Competiciones para crecer con mentalidad de juego",
+    "subtitle": "Participa en torneos internos y externos con una planificacion que te ayuda a rendir mejor.",
+    "primaryCtaLabel": "Inscripcion por WhatsApp",
+    "secondaryCtaLabel": "Pedir informacion"
+  },
+  "sections": [
+    {
+      "title": "Calendario competitivo",
+      "intro": "Definimos torneos por objetivo y nivel para que cada jugador compita con sentido.",
+      "cards": [
+        { "title": "Internos CBVEM", "description": "Fechas de club para practicar escenarios de partido reales." },
+        { "title": "Circuito local", "description": "Torneos de la zona para ganar experiencia y ritmo competitivo." },
+        { "title": "Eventos especiales", "description": "Formatos mixtos y sociales para integrar jugadores nuevos." }
+      ]
+    },
+    {
+      "title": "Soporte competitivo",
+      "intro": "No solo competimos: preparamos cada participacion para transformar la experiencia en mejora.",
+      "cards": [
+        { "title": "Preparacion previa", "description": "Bloques tacticos y de comunicacion antes de competir." },
+        { "title": "Analisis posterior", "description": "Revisamos aciertos y ajustes para la siguiente fecha." },
+        { "title": "Cultura de equipo", "description": "Representar al club con identidad, respeto y compromiso." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Torneos de Beach Volley | CBVEM",
+    "description": "Calendario y participacion en torneos de beach volley con CBVEM en El Masnou."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hola CBVEM, quiero informacion sobre torneos.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

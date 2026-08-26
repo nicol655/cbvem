@@ -1,0 +1,45 @@
+{
+  "slug": "inicio",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Training", "href": "/entrenamientos" },
+    { "label": "Tournaments", "href": "/torneos" },
+    { "label": "Events/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Club Beach Volley El Masnou",
+    "title": "Train beach volley with pro structure and real community",
+    "subtitle": "CBVEM combines methodology, coaching feedback and competitive context so you improve with confidence.",
+    "primaryCtaLabel": "Book via WhatsApp",
+    "secondaryCtaLabel": "Book free trial"
+  },
+  "sections": [
+    {
+      "title": "Why CBVEM",
+      "intro": "A clear proposal for current players and new people starting beach volley.",
+      "cards": [
+        { "title": "Local authority", "description": "We position the club as a beach volley reference in El Masnou." },
+        { "title": "Clear progression", "description": "Each player gets practical goals by level and availability." },
+        { "title": "Club environment", "description": "You train in an active community with shared calendar and events." }
+      ]
+    },
+    {
+      "title": "Everything in one place",
+      "intro": "Core club information centralized to avoid scattered communication.",
+      "cards": [
+        { "title": "Schedules", "description": "Training blocks by level and format." },
+        { "title": "Camps and events", "description": "Intensive days, clinics and special activities." },
+        { "title": "Tournaments", "description": "Internal and external competitions with practical details." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "CBVEM | Club Beach Volley El Masnou",
+    "description": "Beach volley training, tournaments and camps in El Masnou. Book your free trial with CBVEM."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hi CBVEM, I want to book a free trial.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

@@ -1,0 +1,15 @@
+.next
+node_modules
+dist
+out
+.gh-pages
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+
+# Stitch design reference (downloaded HTML/screenshots, not part of the app)
+.stitch-ref
+
+.cursor

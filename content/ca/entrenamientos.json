@@ -1,0 +1,45 @@
+{
+  "slug": "entrenamientos",
+  "nav": [
+    { "label": "Inici", "href": "/" },
+    { "label": "Entrenaments", "href": "/entrenamientos" },
+    { "label": "Torneigs", "href": "/torneos" },
+    { "label": "Esdeveniments/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Entrenaments CBVEM",
+    "title": "Planificacio per nivells per accelerar el teu progres",
+    "subtitle": "Sessions tecniques i tactiques amb enfoc en fonaments i joc real.",
+    "primaryCtaLabel": "Consultar per WhatsApp",
+    "secondaryCtaLabel": "Demanar prova gratuita"
+  },
+  "sections": [
+    {
+      "title": "Estructura de treball",
+      "intro": "Organitzem cada sessio perque sapigues que entrenes i per a que.",
+      "cards": [
+        { "title": "Iniciacio", "description": "Bases tecniques, desplacaments i lectura inicial del joc." },
+        { "title": "Intermedi", "description": "Consolidacio tecnica i presa de decisions en sistema." },
+        { "title": "Avancat", "description": "Ritme competitiu i ajustos per parella." }
+      ]
+    },
+    {
+      "title": "Metodologia",
+      "intro": "Combinem exercicis analitics amb transferencia immediata al partit.",
+      "cards": [
+        { "title": "Control de carrega", "description": "Millora del rendiment i prevencio de sobrecarrega." },
+        { "title": "Feedback clar", "description": "Correccions aplicables a la seguent repeticio." },
+        { "title": "Seguiment", "description": "Objectius curts per mantenir focus i continuitat." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Entrenaments de Beach Volley | CBVEM",
+    "description": "Coneix els entrenaments de CBVEM: nivells, metodologia i prova gratuita."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hola CBVEM, vull informacio d'entrenaments i horaris.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "eventos-camps",
+  "nav": [
+    { "label": "Inici", "href": "/" },
+    { "label": "Entrenaments", "href": "/entrenamientos" },
+    { "label": "Torneigs", "href": "/torneos" },
+    { "label": "Esdeveniments/Camps", "href": "/eventos-camps" }
+  ],
+  "hero": {
+    "eyebrow": "Esdeveniments i Camps",
+    "title": "Experiencies intensives per accelerar aprenentatge i comunitat",
+    "subtitle": "Clinics, camps i activitats especials amb entrenadors professionals.",
+    "primaryCtaLabel": "Consultar per WhatsApp",
+    "secondaryCtaLabel": "Sol licitar placa"
+  },
+  "sections": [
+    {
+      "title": "Formats disponibles",
+      "intro": "Activitats especials per jugadors actuals i persones noves.",
+      "cards": [
+        { "title": "Camps de temporada", "description": "Jornades intensives amb tecnica, tactica i joc." },
+        { "title": "Clinics d'especialistes", "description": "Sessions concretes amb entrenadors convidats." },
+        { "title": "Esdeveniments de club", "description": "Activacions per reforcar comunitat i visibilitat." }
+      ]
+    },
+    {
+      "title": "Valor per al jugador",
+      "intro": "Cada experiencia busca millora tangible i sentit de pertinenca.",
+      "cards": [
+        { "title": "Aprenentatge concentrat", "description": "Treball de punts clau en poc temps." },
+        { "title": "Networking esportiu", "description": "Noves connexions i possibles parelles de joc." },
+        { "title": "Motivacio sostinguda", "description": "Sortir de la rutina impulsa continuitat." }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Esdeveniments i Camps | CBVEM",
+    "description": "Descobreix camps, clinics i activitats especials del Club Beach Volley El Masnou."
+  },
+  "contact": {
+    "whatsappPhone": "34600000000",
+    "whatsappMessage": "Hola CBVEM, vull informacio sobre esdeveniments i camps.",
+    "leadEmail": "clubbeachvolleyelmasnou@gmail.com"
+  }
+}
