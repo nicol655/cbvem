@@ -52,6 +52,16 @@ const TOURNAMENTS = [
     dateBadge: "bg-secondary text-white",
     featured: true,
     cta: "Últimas Plazas"
+  },
+  {
+    date: "20 JUL",
+    category: "Torneo 4x4",
+    name: "BEACH & BEATS 4X4",
+    place: "Beach Club Exclusive",
+    img: "/images/tour-beats.jpg",
+    dateBadge: "bg-secondary text-white",
+    featured: true,
+    cta: "Últimas Plazas"
   }
 ];
 
