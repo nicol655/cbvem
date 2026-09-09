@@ -3,16 +3,18 @@ export const SITE = {
   brand: "CBVEM",
   fullName: "Club de Beach Volley El Masnou",
   email: "clubbeachvolleyelmasnou@gmail.com",
-  whatsappPhone: "34600000000",
-  location: "Playa de Ocata, El Masnou"
+  whatsappPhone: "34685629130",
+  phoneDisplay: "+34 685 62 91 30",
+  location: "Carrer Sant Lluís, 4, 08320 El Masnou",
+  mapsUrl: "https://maps.app.goo.gl/6dmKtwxzSowLXQes5"
 };
 
 export const NAV_ITEMS = [
-  { label: "Inicio", href: "/" },
-  { label: "Entrenamientos", href: "/entrenamientos" },
-  { label: "Torneos", href: "/torneos" },
-  { label: "Camps y Eventos", href: "/eventos-camps" }
-];
+  { key: "home", href: "/" },
+  { key: "training", href: "/entrenamientos" },
+  { key: "tournaments", href: "/torneos" },
+  { key: "camps", href: "/eventos-camps" }
+] as const;
 
 export function whatsappHref(message: string): string {
   const phone = SITE.whatsappPhone.replace(/\D/g, "");

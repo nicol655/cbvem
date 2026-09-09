@@ -58,6 +58,29 @@ a {
   box-shadow: 0 30px 60px -15px rgba(43, 43, 73, 0.08);
 }
 
+/* Diagonal light streak that sweeps across a button on hover, instead of scaling it up. */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -75%;
+  width: 50%;
+  background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.65), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.65s ease;
+  pointer-events: none;
+}
+
+.btn-shine:hover::after {
+  left: 125%;
+}
+
 .floating-element {
   transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -78,15 +101,6 @@ a {
   50% {
     transform: translateY(-20px);
   }
-}
-
-.schedule-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.schedule-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px -15px rgba(43, 43, 73, 0.12);
 }
 
 .custom-scrollbar::-webkit-scrollbar {

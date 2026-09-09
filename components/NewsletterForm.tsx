@@ -35,8 +35,8 @@ export function NewsletterForm({
 
   const buttonClass =
     variant === "dark"
-      ? "bg-secondary text-on-primary py-4 px-10 rounded-full font-label-bold text-label-bold hover:scale-105 transition-transform whitespace-nowrap"
-      : "w-full bg-primary text-on-primary rounded-full px-6 py-4 font-label-bold text-label-bold hover:bg-secondary transition-all uppercase tracking-widest";
+      ? "btn-shine bg-secondary text-on-primary py-4 px-10 rounded-[5px] font-label-bold text-label-bold whitespace-nowrap"
+      : "w-full bg-primary text-on-primary rounded-[5px] px-6 py-4 font-label-bold text-label-bold hover:bg-secondary transition-all uppercase tracking-widest";
 
   return (
     <form

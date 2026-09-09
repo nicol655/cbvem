@@ -4,37 +4,41 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+import { useLanguage } from "@/components/LanguageProvider";
 import { asset } from "@/lib/asset";
-import { NAV_ITEMS, SITE, WHATSAPP_DEFAULT } from "@/lib/site";
+import { NAV_ITEMS, WHATSAPP_DEFAULT } from "@/lib/site";
+
+function isActivePath(pathname: string, href: string): boolean {
+  const normalized = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
+  return normalized === href;
+}
 
 export function SiteNav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-surface-container-lowest shadow-[0_30px_60px_-15px_rgba(43,43,73,0.08)]">
-      <div className="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+      <div className="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
         <Link href="/" className="flex items-center gap-4">
-          <img alt="CBVEM Logo" className="h-14 w-14 object-contain" src={asset("/images/logo.jpg")} />
-          <span className="font-headline-md text-headline-md text-primary uppercase tracking-widest">
-            {SITE.brand}
-          </span>
+          <img alt="CBVEM Logo" className="h-12 w-12 object-contain" src={asset("/images/logo.svg")} />
         </Link>
 
         <div className="hidden md:flex items-center gap-10">
           {NAV_ITEMS.map((item) => {
-            const active = pathname === item.href;
+            const active = isActivePath(pathname, item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
                 className={
                   active
-                    ? "text-primary relative font-label-bold text-label-bold after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-secondary after:rounded-full transition-all duration-300"
-                    : "text-on-surface-variant font-body-md text-body-md hover:text-secondary transition-all duration-300"
+                    ? "text-primary font-label-bold text-label-bold border-b-2 border-primary pb-1 transition-all duration-300"
+                    : "text-on-surface-variant font-body-md text-body-md border-b-2 border-transparent pb-1 hover:text-secondary transition-all duration-300"
                 }
               >
-                {item.label}
+                {t(`nav.${item.key}`)}
               </Link>
             );
           })}
@@ -44,9 +48,9 @@ export function SiteNav() {
           href={WHATSAPP_DEFAULT}
           target="_blank"
           rel="noreferrer"
-          className="hidden md:block bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-3 rounded-full hover:scale-105 transition-transform duration-200"
+          className="btn-shine hidden md:block bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-3 rounded-[5px]"
         >
-          RESERVAR CLASE GRATIS
+          {t("nav.cta")}
         </a>
 
         <button
@@ -66,21 +70,21 @@ export function SiteNav() {
               href={item.href}
               onClick={() => setOpen(false)}
               className={
-                pathname === item.href
-                  ? "text-primary font-label-bold text-label-bold"
-                  : "text-on-surface-variant font-body-md text-body-md"
+                isActivePath(pathname, item.href)
+                  ? "text-primary font-label-bold text-label-bold border-b-2 border-primary pb-1 self-start"
+                  : "text-on-surface-variant font-body-md text-body-md border-b-2 border-transparent pb-1 self-start"
               }
             >
-              {item.label}
+              {t(`nav.${item.key}`)}
             </Link>
           ))}
           <a
             href={WHATSAPP_DEFAULT}
             target="_blank"
             rel="noreferrer"
-            className="bg-secondary text-on-secondary text-center font-label-bold text-label-bold px-8 py-3 rounded-full mt-2"
+            className="bg-secondary text-on-secondary text-center font-label-bold text-label-bold px-8 py-3 rounded-[5px] mt-2"
           >
-            RESERVAR CLASE GRATIS
+            {t("nav.cta")}
           </a>
         </div>
       ) : null}

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { LanguageProvider } from "@/components/LanguageProvider";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+
 export const metadata: Metadata = {
   title: "CBVEM | Club de Beach Volley El Masnou",
   description:
@@ -17,7 +20,7 @@ tailwind.config = {
         "inverse-primary": "#c5c3e9",
         "tertiary-container": "#2c2e32",
         "surface-container-high": "#e8e8e8",
-        "secondary": "#7d5628",
+        "secondary": "#bc8e5a",
         "primary-fixed-dim": "#c5c3e9",
         "surface-container-highest": "#e2e2e2",
         "surface-dim": "#dadada",
@@ -111,7 +114,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: tailwindConfig }} />
       </head>
       <body className="bg-surface-bright text-on-surface overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
-        {children}
+        <LanguageProvider>
+          {children}
+          <LanguageSwitcher />
+        </LanguageProvider>
       </body>
     </html>
   );
