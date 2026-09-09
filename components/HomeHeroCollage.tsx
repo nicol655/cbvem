@@ -42,7 +42,7 @@ const IMAGES: CollageImage[] = [
     mobile: ""
   },
   {
-    src: "/images/masculino-3.png",
+    src: "/images/masculino-3.jpg",
     alt: "Jugador de élite masculino en pleno bloqueo",
     from: "bottom",
     desktop: "md:[grid-column:4/5] md:[grid-row:1/4]",
@@ -56,7 +56,7 @@ const IMAGES: CollageImage[] = [
     mobile: "col-span-2"
   },
   {
-    src: "/images/FEM3.png",
+    src: "/images/FEM3.jpg",
     alt: "Jugadora de élite femenino en pleno remate",
     from: "bottom",
     desktop: "md:[grid-column:3/4] md:[grid-row:2/4]",

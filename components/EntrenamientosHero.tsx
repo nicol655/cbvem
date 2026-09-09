@@ -141,7 +141,7 @@ export function EntrenamientosHero() {
               <img
                 className="w-full h-full object-cover"
                 alt="Jugadora élite femenino"
-                src={asset("/images/FEM4.png")}
+                src={asset("/images/FEM4.jpg")}
               />
             </div>
           </div>
@@ -176,7 +176,7 @@ export function EntrenamientosHero() {
             <img
               className="w-full h-full object-cover"
               alt="Jugadora élite femenino"
-              src={asset("/images/FEM4.png")}
+              src={asset("/images/FEM4.jpg")}
             />
           </div>
         </div>

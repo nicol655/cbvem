@@ -194,14 +194,14 @@ export function EntrenamientosContent() {
                 <img
                   className="w-full h-full object-cover opacity-80 hover:scale-110 transition-transform duration-700"
                   alt="Balón de voley playa en la arena"
-                  src={asset("/images/masculino-2.png")}
+                  src={asset("/images/masculino-2.jpg")}
                 />
               </div>
               <div className="bg-secondary rounded-[5px] aspect-square overflow-hidden">
                 <img
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                   alt="Jugadores celebrando al atardecer"
-                  src={asset("/images/INI1.png")}
+                  src={asset("/images/INI1.jpg")}
                 />
               </div>
               <div className="bg-outline rounded-[5px] aspect-[2/1] mt-4 col-span-2 overflow-hidden">

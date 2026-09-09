@@ -28,7 +28,7 @@ const TOURNAMENTS = [
   {
     date: "26 SEP",
     nameKey: "eliteFemenino",
-    img: "/images/FEM2.png",
+    img: "/images/FEM2.jpg",
     dateBadge: "bg-primary text-white",
     featured: false,
     formUrl: "https://forms.gle/RHLxhzyvtEDFPBwA8"
@@ -36,7 +36,7 @@ const TOURNAMENTS = [
   {
     date: "27 SEP",
     nameKey: "eliteMasculino",
-    img: "/images/masculino-5.png",
+    img: "/images/masculino-5.jpg",
     dateBadge: "bg-primary text-white",
     featured: false,
     formUrl: "https://forms.gle/pS97R5K7GPb5YKu87"
