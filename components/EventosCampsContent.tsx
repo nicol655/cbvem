@@ -17,7 +17,7 @@ export function EventosCampsContent() {
 
   return (
     <>
-      <SiteNav />
+      <SiteNav transparentVariant="dark" />
       <main className="pt-16 overflow-x-hidden">
         {/* Hero */}
         <ScrollReveal
@@ -76,7 +76,7 @@ export function EventosCampsContent() {
                 href={CAMP_FORM_URL[locale]}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full text-center bg-primary py-4 rounded-[5px] text-on-primary font-label-bold text-label-bold hover:bg-secondary transition-colors duration-300"
+                className="btn-shine w-full text-center bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-4 rounded-[5px]"
               >
                 {t("eventosCamps.cta")}
               </a>
@@ -87,120 +87,99 @@ export function EventosCampsContent() {
         {/* Upcoming clinics */}
         <section className="bg-surface-container-low py-section-mobile md:py-section-desktop">
           <div className="max-w-container-max mx-auto px-gutter">
-            <ScrollReveal className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
-              <div>
-                <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase">
-                  {t("eventosCamps.clinicsTitle")}
-                </h2>
-                <p className="font-body-md text-body-md text-on-surface-variant">
-                  {t("eventosCamps.clinicsSubtitle")}
-                </p>
-              </div>
-              <a
-                className="text-secondary font-label-bold text-label-bold border-b-2 border-secondary hover:opacity-70 transition-opacity"
-                href={whatsappHref("Hola CBVEM, quiero ver el calendario completo de clínics.")}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {t("eventosCamps.viewFullCalendar")}
-              </a>
+            <ScrollReveal className="mb-12">
+              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase">
+                {t("eventosCamps.clinicsTitle")}
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                {t("eventosCamps.clinicsSubtitle")}
+              </p>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Clinic 1 */}
-              <ScrollReveal className="bg-surface-container-lowest p-8 rounded-[5px] ambient-shadow relative overflow-hidden group flex flex-col">
-                <div className="absolute -right-4 -top-4 w-24 h-24 bg-secondary/10 rounded-full group-hover:scale-150 transition-transform duration-500" />
-                <div className="flex justify-between items-start mb-6">
-                  <span className="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-[5px] font-label-bold text-label-bold">
-                    {t("eventosCamps.clinic1Tag")}
-                  </span>
+              {/* Clínic Julian */}
+              <ScrollReveal className="bg-surface-container-lowest p-8 rounded-[5px] border border-primary border-l-4 border-l-secondary shadow-[0_20px_45px_-10px_rgba(43,43,73,0.25)] relative overflow-hidden opacity-50 cursor-not-allowed flex flex-col">
+                <div className="flex justify-end items-start mb-6">
                   <span className="material-symbols-outlined text-secondary">sports_volleyball</span>
                 </div>
-                <h3 className="font-headline-md text-headline-md text-primary mb-2">
-                  {t("eventosCamps.clinic1Title")}
-                </h3>
+                <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("eventosCamps.julianTitle")}</h3>
                 <p className="font-body-md text-body-md text-on-surface-variant mb-8">
-                  {t("eventosCamps.clinic1Text")}
+                  {t("eventosCamps.julianText")}
                 </p>
-                <div className="flex justify-between items-center mt-auto">
-                  <div>
-                    <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider">
-                      {t("eventosCamps.priceMembersLabel")}
-                    </p>
-                    <p className="font-headline-md text-secondary">65€</p>
-                  </div>
-                  <span className="bg-error text-on-primary px-3 py-1 rounded-[5px] font-label-bold text-[10px]">
-                    {t("eventosCamps.lastSpots")}
-                  </span>
+                <div className="mt-auto pt-3 border-t border-secondary">
+                  <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider mb-1">
+                    {t("eventosCamps.dateLabel")}
+                  </p>
+                  <p className="font-headline-md text-primary">{t("eventosCamps.julianDate")}</p>
                 </div>
               </ScrollReveal>
 
-              {/* Clinic 2 */}
+              {/* Clinic 2 — TBA */}
               <ScrollReveal
                 delay={0.1}
-                className="bg-surface-container-lowest p-8 rounded-[5px] ambient-shadow relative overflow-hidden group flex flex-col"
+                className="bg-surface-container-lowest p-8 rounded-[5px] border border-primary border-l-4 border-l-gray-400 shadow-[0_20px_45px_-10px_rgba(43,43,73,0.25)] relative overflow-hidden opacity-50 cursor-not-allowed flex flex-col"
               >
-                <div className="absolute -right-4 -top-4 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-150 transition-transform duration-500" />
                 <div className="flex justify-between items-start mb-6">
-                  <span className="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-[5px] font-label-bold text-label-bold">
-                    {t("eventosCamps.clinic2Tag")}
+                  <span className="material-symbols-outlined text-on-surface-variant">shield</span>
+                  <span className="bg-secondary text-white px-3 py-1 rounded-[5px] font-label-bold text-[10px] uppercase">
+                    {t("eventosCamps.comingSoon")}
                   </span>
-                  <span className="material-symbols-outlined fill text-secondary">shield</span>
                 </div>
-                <h3 className="font-headline-md text-headline-md text-primary mb-2">
-                  {t("eventosCamps.clinic2Title")}
-                </h3>
+                <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("eventosCamps.tbaTitle")}</h3>
                 <p className="font-body-md text-body-md text-on-surface-variant mb-8">
-                  {t("eventosCamps.clinic2Text")}
+                  {t("eventosCamps.tbaText")}
                 </p>
-                <div className="flex justify-between items-center mt-auto">
-                  <div>
-                    <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider">
-                      {t("eventosCamps.dateLabel")}
-                    </p>
-                    <p className="font-headline-md text-primary">05 AGO</p>
-                  </div>
-                  <a
-                    href={whatsappHref('Hola CBVEM, quiero info del clínic "Brazilian Defensive Style" (05 AGO).')}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="bg-surface-container-highest p-3 rounded-[5px] hover:bg-secondary-container transition-colors"
-                  >
-                    <span className="material-symbols-outlined text-primary">arrow_forward</span>
-                  </a>
+                <div className="mt-auto pt-3 border-t border-gray-400">
+                  <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider mb-1">
+                    {t("eventosCamps.dateLabel")}
+                  </p>
+                  <p className="font-headline-md text-primary">—</p>
                 </div>
               </ScrollReveal>
 
-              {/* Clinic 3 */}
+              {/* Clinic 3 — TBA */}
               <ScrollReveal
                 delay={0.2}
-                className="bg-surface-container-lowest p-8 rounded-[5px] ambient-shadow relative overflow-hidden group flex flex-col"
+                className="bg-surface-container-lowest p-8 rounded-[5px] border border-primary border-l-4 border-l-gray-400 shadow-[0_20px_45px_-10px_rgba(43,43,73,0.25)] relative overflow-hidden opacity-50 cursor-not-allowed flex flex-col"
               >
-                <div className="absolute -right-4 -top-4 w-24 h-24 bg-secondary/10 rounded-full group-hover:scale-150 transition-transform duration-500" />
                 <div className="flex justify-between items-start mb-6">
-                  <span className="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-[5px] font-label-bold text-label-bold">
-                    {t("eventosCamps.clinic3Tag")}
+                  <span className="material-symbols-outlined text-on-surface-variant">groups</span>
+                  <span className="bg-secondary text-white px-3 py-1 rounded-[5px] font-label-bold text-[10px] uppercase">
+                    {t("eventosCamps.comingSoon")}
                   </span>
-                  <span className="material-symbols-outlined text-secondary">groups</span>
                 </div>
-                <h3 className="font-headline-md text-headline-md text-primary mb-2">
-                  {t("eventosCamps.clinic3Title")}
-                </h3>
+                <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("eventosCamps.tbaTitle")}</h3>
                 <p className="font-body-md text-body-md text-on-surface-variant mb-8">
-                  {t("eventosCamps.clinic3Text")}
+                  {t("eventosCamps.tbaText")}
                 </p>
-                <div className="flex justify-between items-center mt-auto">
-                  <div>
-                    <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider">
-                      {t("eventosCamps.priceLabel")}
-                    </p>
-                    <p className="font-headline-md text-secondary">120€</p>
-                  </div>
-                  <span className="font-label-bold text-label-bold text-primary">
-                    {t("eventosCamps.openRegistration")}
-                  </span>
+                <div className="mt-auto pt-3 border-t border-gray-400">
+                  <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider mb-1">
+                    {t("eventosCamps.dateLabel")}
+                  </p>
+                  <p className="font-headline-md text-primary">—</p>
                 </div>
               </ScrollReveal>
             </div>
+          </div>
+        </section>
+
+        {/* Host your own clinic/camp CTA */}
+        <section className="bg-primary-container text-white relative overflow-hidden py-section-mobile md:py-section-desktop">
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary opacity-5 pointer-events-none -rotate-12 translate-x-1/4" />
+          <div className="absolute -left-24 -bottom-24 w-96 h-96 bg-secondary rounded-full opacity-10 blur-3xl pointer-events-none" />
+          <div className="max-w-container-max mx-auto px-gutter text-center relative z-10">
+            <ScrollReveal>
+              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-10 max-w-2xl mx-auto">
+                {t("eventosCamps.clinicsCtaText")}
+              </h2>
+              <a
+                href={whatsappHref("Quiero información para hacer un clinic/camp en la sede de BVM.")}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-shine btn-glow bg-secondary text-white px-10 py-4 rounded-[5px] font-label-bold text-label-bold inline-block"
+              >
+                {t("eventosCamps.clinicsCtaButton")}
+              </a>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -253,9 +232,9 @@ export function EventosCampsContent() {
             <ScrollReveal delay={0.15} className="relative">
               <div className="absolute inset-0 bg-primary-container rounded-[5px] rotate-3 -z-10 opacity-10" />
               <img
-                className="w-full aspect-square object-cover rounded-[5px] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full aspect-square object-cover shadow-2xl transition-all duration-700"
                 alt="Entrenador explicando táctica al grupo"
-                src={asset("/images/DavidPic.JPG")}
+                src={asset("/images/camps_foto.jpg")}
               />
             </ScrollReveal>
           </div>

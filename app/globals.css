@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -16,6 +20,13 @@ body {
 body {
   font-family: "Hanken Grotesk", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   background-color: #f9f9f9;
+}
+
+/* Mobile hero height: 100vh first so unsupported browsers keep that value,
+   then 100svh overrides it where the dynamic viewport unit is understood. */
+.h-hero-mobile {
+  height: 100vh;
+  height: 100svh;
 }
 
 a {
@@ -79,6 +90,21 @@ a {
 
 .btn-shine:hover::after {
   left: 125%;
+}
+
+/* Pulsing glow ring to draw attention to a standout CTA */
+.btn-glow {
+  animation: btn-glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes btn-glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(188, 142, 90, 0.55);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(188, 142, 90, 0);
+  }
 }
 
 .floating-element {

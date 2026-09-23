@@ -7,7 +7,8 @@ import type { Locale } from "@/lib/translations";
 
 const OPTIONS: { code: Locale; short: string }[] = [
   { code: "es", short: "Es" },
-  { code: "en", short: "Eng" }
+  { code: "en", short: "Eng" },
+  { code: "ca", short: "Cat" }
 ];
 
 export function LanguageSwitcher() {
@@ -26,7 +27,7 @@ export function LanguageSwitcher() {
   }, []);
 
   return (
-    <div ref={rootRef} className="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-3">
+    <div ref={rootRef} className="hidden md:flex fixed bottom-6 right-6 z-[60] flex-col items-end gap-3">
       {open ? (
         <div className="bg-white rounded-[5px] ambient-shadow overflow-hidden border border-outline-variant/40 min-w-[160px]">
           {OPTIONS.map((option) => (

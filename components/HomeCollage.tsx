@@ -113,7 +113,7 @@ export function HomeCollage() {
         {IMAGES.map((image, i) => (
           <div
             key={image.src}
-            className={`relative overflow-hidden rounded-[5px] shadow-xl group ${image.mobile} ${image.desktop}`}
+            className={`relative overflow-hidden shadow-xl group ${image.mobile} ${image.desktop}`}
           >
             <div
               ref={(el) => {

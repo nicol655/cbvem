@@ -1,4 +1,4 @@
-export type Locale = "es" | "en";
+export type Locale = "es" | "en" | "ca";
 
 export const DEFAULT_LOCALE: Locale = "es";
 
@@ -9,7 +9,11 @@ export const translations = {
       training: "Entrenamientos",
       tournaments: "Torneos",
       camps: "Camps y Eventos",
-      cta: "RESERVAR CLASE GRATIS"
+      cta: "RESERVAR CLASE GRATIS",
+      bookingBarText: "Primera clase gratis",
+      bookingBarCta: "RESERVAR",
+      openMenu: "Abrir menú",
+      closeMenu: "Cerrar menú"
     },
     footer: {
       tagline:
@@ -22,10 +26,12 @@ export const translations = {
     languageSwitcher: {
       label: "Idioma",
       es: "Español",
-      en: "English"
+      en: "English",
+      ca: "Català"
     },
     home: {
       eyebrow: "Premium Beach Life",
+      mobileEyebrow: "Club de vóley playa · Maresme",
       titleLine1: "BEACH VOLLEY",
       titleHighlight: "EL MASNOU",
       subtitle:
@@ -58,7 +64,7 @@ export const translations = {
         bullet1: "Evaluación de nivel gratuita",
         bullet2: "Acceso a vestuarios y zona chill-out",
         bullet3: "Material técnico de alta gama incluido",
-        whatsapp: "O escríbenos por WhatsApp"
+        whatsapp: "Escríbenos por WhatsApp"
       }
     },
     leadForm: {
@@ -78,15 +84,31 @@ export const translations = {
       badge: "TEMPORADA 2026",
       heroTitleLine1: "ESCUELA Y GRUPOS DE",
       heroTitleLine2: "ENTRENAMIENTO",
+      mobileHeroLine1: "ESCUELA Y",
+      mobileHeroLine2: "GRUPOS DE",
+      mobileHeroLine3: "ENTRENAMIENTO",
       heroSubtitle:
         "Perfecciona tu técnica en las mejores playas con un sistema de entrenamiento adaptado a todos los niveles. Desde tus primeros pasos hasta la alta competición.",
       scheduleTitle: "Horarios Semanales",
       scheduleSubtitle: "Elige el horario que mejor se adapte a tu ritmo de vida.",
       ctaKnowLevel: "Contáctame para conocer tu nivel",
-      levelBeginner: "Iniciación",
-      levelIntermediate: "Intermedio",
-      levelElite: "Élite",
-      full: "Full",
+      levelIniciacion: "Iniciación",
+      levelIntermedio: "Intermedio",
+      levelAvanzado: "Avanzado",
+      levelCompeticion: "Competición",
+      levelSub17: "Sub-17",
+      onlyAvailable: "Solo con plaza",
+      freeShort: "libres",
+      filterAll: "Todos",
+      emptyDayFiltered: "No hay grupos con ese filtro este día.",
+      spotsComplete: "Completo",
+      spotsAvailable: "Hay sitio",
+      spotsUnitSingular: "plaza",
+      spotsUnitPlural: "plazas",
+      categoryFemenino: "Femenino",
+      categoryMasculino: "Masculino",
+      categoryMixto: "Mixto",
+      categoryJuvenil: "Juvenil",
       days: {
         monday: "Lunes",
         tuesday: "Martes",
@@ -94,17 +116,30 @@ export const translations = {
         thursday: "Jueves",
         friday: "Viernes"
       },
+      daysShort: {
+        monday: "Lun",
+        tuesday: "Mar",
+        wednesday: "Mié",
+        thursday: "Jue",
+        friday: "Vie"
+      },
       levelsTitle: "Nuestros Niveles",
       levels: {
-        beginnerTitle: "Iniciación",
-        beginnerText:
+        iniciacionTitle: "Iniciación",
+        iniciacionText:
           "Aprende los fundamentos básicos: toque de dedos, antebrazos y saque. Perfecto para quienes nunca han jugado o llevan poco tiempo.",
-        intermediateTitle: "Intermedio",
-        intermediateText:
+        intermedioTitle: "Intermedio",
+        intermedioText:
           "Mejora tu control de juego, táctica de campo y remate. Enfocado en jugadores con experiencia previa en pista o playa.",
-        eliteTitle: "Avanzado / Élite",
-        eliteText:
-          "Entrenamiento de alto rendimiento. Preparación para torneos, sistemas defensivos complejos y perfeccionamiento técnico extremo."
+        avanzadoTitle: "Avanzado",
+        avanzadoText:
+          "Ritmo competitivo, táctica situacional y ajustes por pareja. Para jugadores consolidados que buscan dar el salto de calidad.",
+        competicionTitle: "Competición",
+        competicionText:
+          "Entrenamiento de alto rendimiento. Preparación para torneos, sistemas defensivos complejos y perfeccionamiento técnico extremo.",
+        sub17Title: "Sub-17",
+        sub17Text:
+          "Grupo juvenil para jugadores de hasta 17 años, con una progresión técnica y física adaptada a su edad."
       }
     },
     openTryouts: {
@@ -128,6 +163,7 @@ export const translations = {
       ctaFullCalendar: "CALENDARIO COMPLETO",
       ctaRules: "REGLAMENTO",
       upcomingTitle: "Próximos Torneos",
+      comingSoon: "PRÓXIMAMENTE",
       calendarCategory: "Calendario Competiciones",
       place: "Pista Central CBVEM",
       cta: "Inscribirse",
@@ -146,6 +182,12 @@ export const translations = {
         sergio: "MVP TEMPORADA INVIERNO",
         sandstorm: "CAMPEONES MIXTO INTERCLUB"
       },
+      coachesTitle: "Nuestros Entrenadores",
+      coachesSubtitle: "El equipo que forma a nuestros jugadores dentro y fuera de la arena.",
+      coaches: {
+        davidRole: "Socio - Entrenador",
+        oscarRole: "Entrenador"
+      },
       communityTitle: "Únete a la Comunidad",
       communityText:
         "Suscríbete para recibir notificaciones exclusivas de aperturas de inscripciones, torneos flash y eventos especiales en la playa.",
@@ -157,7 +199,7 @@ export const translations = {
       heroTitle: "CAMPS INTENSIVOS Y CLÍNICS",
       heroSubtitle:
         "Perfecciona tu técnica con entrenadores de élite en el entorno exclusivo de la costa del Maresme.",
-      featuredBadge: "ÚLTIMAS 5 PLAZAS",
+      featuredBadge: "ÚLTIMOS DÍAS DE EARLY BIRD",
       featuredTitle: "CAMP TENERIFE 2027",
       featuredDate: "21 - 24 DE ENERO 2027",
       featuredText:
@@ -167,21 +209,15 @@ export const translations = {
       cta: "Apuntarse",
       clinicsTitle: "PRÓXIMOS CLÍNICS",
       clinicsSubtitle: "Sesiones intensivas con estrellas internacionales",
-      viewFullCalendar: "VER CALENDARIO COMPLETO",
-      clinic1Tag: "TÉCNICA DE ATAQUE",
-      clinic1Title: "CLÍNIC CON JOAN FRANCESC",
-      clinic1Text: "Domina el 'cut shot' y la potencia en red con el campeón nacional.",
-      priceMembersLabel: "PRECIO SOCIOS",
-      lastSpots: "ÚLTIMAS PLAZAS",
-      clinic2Tag: "DEFENSA AVANZADA",
-      clinic2Title: "BRAZILIAN DEFENSIVE STYLE",
-      clinic2Text: "Aprende la lectura de juego y posicionamiento de la escuela brasileña.",
+      clinicsCtaText: "¿Quieres hacer tu camp o clínic en la sede de BVM?",
+      clinicsCtaButton: "Hablemos",
       dateLabel: "FECHA",
-      clinic3Tag: "CAMP JUVENIL",
-      clinic3Title: "ACADEMY WEEKEND",
-      clinic3Text: "Fin de semana intensivo para jóvenes promesas (14-18 años).",
-      priceLabel: "PRECIO",
-      openRegistration: "INSCRIPCIÓN ABIERTA",
+      julianTitle: "CLÍNIC CON JULIAN",
+      julianText: "Próximamente abriremos las inscripciones para este clínic.",
+      julianDate: "20 JUNIO",
+      comingSoon: "PRÓXIMAMENTE",
+      tbaTitle: "POR ANUNCIAR",
+      tbaText: "Estamos cerrando la fecha y el formador de este clínic.",
       whyTitle: "POR QUÉ NUESTROS CAMPS",
       why1Title: "Grupos reducidos",
       why1Text:
@@ -205,7 +241,11 @@ export const translations = {
       training: "Training",
       tournaments: "Tournaments",
       camps: "Camps & Events",
-      cta: "BOOK A FREE CLASS"
+      cta: "BOOK A FREE CLASS",
+      bookingBarText: "Free first class",
+      bookingBarCta: "BOOK",
+      openMenu: "Open menu",
+      closeMenu: "Close menu"
     },
     footer: {
       tagline:
@@ -218,10 +258,12 @@ export const translations = {
     languageSwitcher: {
       label: "Language",
       es: "Español",
-      en: "English"
+      en: "English",
+      ca: "Català"
     },
     home: {
       eyebrow: "Premium Beach Life",
+      mobileEyebrow: "Beach volley club · Maresme",
       titleLine1: "BEACH VOLLEY",
       titleHighlight: "EL MASNOU",
       subtitle:
@@ -254,7 +296,7 @@ export const translations = {
         bullet1: "Free level assessment",
         bullet2: "Access to changing rooms and chill-out zone",
         bullet3: "High-end technical gear included",
-        whatsapp: "Or message us on WhatsApp"
+        whatsapp: "Message us on WhatsApp"
       }
     },
     leadForm: {
@@ -274,15 +316,31 @@ export const translations = {
       badge: "SEASON 2026",
       heroTitleLine1: "TRAINING SCHOOL AND",
       heroTitleLine2: "GROUP SESSIONS",
+      mobileHeroLine1: "TRAINING",
+      mobileHeroLine2: "SCHOOL AND",
+      mobileHeroLine3: "GROUP SESSIONS",
       heroSubtitle:
         "Perfect your technique on the best beaches with a training system adapted to every level. From your first steps to high-level competition.",
       scheduleTitle: "Weekly Schedule",
       scheduleSubtitle: "Choose the schedule that best fits your lifestyle.",
       ctaKnowLevel: "Contact me to find out your level",
-      levelBeginner: "Beginner",
-      levelIntermediate: "Intermediate",
-      levelElite: "Elite",
-      full: "Full",
+      levelIniciacion: "Beginner",
+      levelIntermedio: "Intermediate",
+      levelAvanzado: "Advanced",
+      levelCompeticion: "Competition",
+      levelSub17: "U-17",
+      onlyAvailable: "Open spots only",
+      freeShort: "free",
+      filterAll: "All",
+      emptyDayFiltered: "No groups match this filter today.",
+      spotsComplete: "Full",
+      spotsAvailable: "Open spot",
+      spotsUnitSingular: "spot",
+      spotsUnitPlural: "spots",
+      categoryFemenino: "Women's",
+      categoryMasculino: "Men's",
+      categoryMixto: "Mixed",
+      categoryJuvenil: "Youth",
       days: {
         monday: "Monday",
         tuesday: "Tuesday",
@@ -290,17 +348,29 @@ export const translations = {
         thursday: "Thursday",
         friday: "Friday"
       },
+      daysShort: {
+        monday: "Mon",
+        tuesday: "Tue",
+        wednesday: "Wed",
+        thursday: "Thu",
+        friday: "Fri"
+      },
       levelsTitle: "Our Levels",
       levels: {
-        beginnerTitle: "Beginner",
-        beginnerText:
+        iniciacionTitle: "Beginner",
+        iniciacionText:
           "Learn the basics: finger sets, forearm passes and serving. Perfect for those who have never played or are just starting out.",
-        intermediateTitle: "Intermediate",
-        intermediateText:
+        intermedioTitle: "Intermediate",
+        intermedioText:
           "Improve your ball control, court tactics and spiking. Aimed at players with prior indoor or beach experience.",
-        eliteTitle: "Advanced / Elite",
-        eliteText:
-          "High-performance training. Tournament preparation, complex defensive systems and extreme technical refinement."
+        avanzadoTitle: "Advanced",
+        avanzadoText:
+          "Competitive pace, situational tactics and pair-specific adjustments. For consolidated players looking to level up.",
+        competicionTitle: "Competition",
+        competicionText:
+          "High-performance training. Tournament preparation, complex defensive systems and extreme technical refinement.",
+        sub17Title: "U-17",
+        sub17Text: "Youth group for players up to 17, with a technical and physical progression adapted to their age."
       }
     },
     openTryouts: {
@@ -324,6 +394,7 @@ export const translations = {
       ctaFullCalendar: "FULL CALENDAR",
       ctaRules: "RULES",
       upcomingTitle: "Upcoming Tournaments",
+      comingSoon: "COMING SOON",
       calendarCategory: "Competition Calendar",
       place: "CBVEM Central Court",
       cta: "Sign up",
@@ -341,6 +412,12 @@ export const translations = {
         sergio: "WINTER SEASON MVP",
         sandstorm: "MIXED INTERCLUB CHAMPIONS"
       },
+      coachesTitle: "Our Coaches",
+      coachesSubtitle: "The team that shapes our players on and off the sand.",
+      coaches: {
+        davidRole: "Partner - Coach",
+        oscarRole: "Coach"
+      },
       communityTitle: "Join the Community",
       communityText:
         "Subscribe to receive exclusive notifications about registration openings, flash tournaments and special events on the beach.",
@@ -351,7 +428,7 @@ export const translations = {
       badge: "PREMIUM EXPERIENCES",
       heroTitle: "INTENSIVE CAMPS AND CLINICS",
       heroSubtitle: "Perfect your technique with elite coaches in the exclusive setting of the Maresme coast.",
-      featuredBadge: "5 SPOTS LEFT",
+      featuredBadge: "LAST DAYS OF EARLY BIRD",
       featuredTitle: "TENERIFE CAMP 2027",
       featuredDate: "JANUARY 21 - 24, 2027",
       featuredText:
@@ -361,21 +438,15 @@ export const translations = {
       cta: "Sign up",
       clinicsTitle: "UPCOMING CLINICS",
       clinicsSubtitle: "Intensive sessions with international stars",
-      viewFullCalendar: "VIEW FULL CALENDAR",
-      clinic1Tag: "ATTACK TECHNIQUE",
-      clinic1Title: "CLINIC WITH JOAN FRANCESC",
-      clinic1Text: "Master the cut shot and net power with the national champion.",
-      priceMembersLabel: "MEMBER PRICE",
-      lastSpots: "LAST SPOTS",
-      clinic2Tag: "ADVANCED DEFENSE",
-      clinic2Title: "BRAZILIAN DEFENSIVE STYLE",
-      clinic2Text: "Learn game reading and positioning from the Brazilian school.",
+      clinicsCtaText: "Want to host your camp or clinic at the BVM venue?",
+      clinicsCtaButton: "Let's talk",
       dateLabel: "DATE",
-      clinic3Tag: "YOUTH CAMP",
-      clinic3Title: "ACADEMY WEEKEND",
-      clinic3Text: "Intensive weekend for young talent (ages 14-18).",
-      priceLabel: "PRICE",
-      openRegistration: "REGISTRATION OPEN",
+      julianTitle: "CLINIC WITH JULIAN",
+      julianText: "Registration for this clinic will open soon.",
+      julianDate: "JUNE 20",
+      comingSoon: "COMING SOON",
+      tbaTitle: "TO BE ANNOUNCED",
+      tbaText: "We're finalizing the date and coach for this clinic.",
       whyTitle: "WHY OUR CAMPS",
       why1Title: "SMALL GROUPS",
       why1Text: "A maximum of 6 students per court to guarantee individualized technical attention.",
@@ -387,6 +458,238 @@ export const translations = {
       ctaText: "Subscribe to receive exclusive notifications about new Camps, Clinics and “Last Minute” offers.",
       newsletterPlaceholder: "YOUR EMAIL",
       newsletterButton: "JOIN THE LIST"
+    }
+  },
+  ca: {
+    nav: {
+      home: "Inici",
+      training: "Entrenaments",
+      tournaments: "Torneigs",
+      camps: "Camps i Esdeveniments",
+      cta: "RESERVA CLASSE GRATUÏTA",
+      bookingBarText: "Primera classe gratuïta",
+      bookingBarCta: "RESERVA",
+      openMenu: "Obrir menú",
+      closeMenu: "Tancar menú"
+    },
+    footer: {
+      tagline:
+        "El club referent de vòlei platja a El Masnou. Passió, esport i estil de vida mediterrani a cada entrenament.",
+      explore: "Explora",
+      contact: "Contacte",
+      rights: "Tots els drets reservats.",
+      madeWith: "Fet amb passió a El Masnou"
+    },
+    languageSwitcher: {
+      label: "Idioma",
+      es: "Español",
+      en: "English",
+      ca: "Català"
+    },
+    home: {
+      eyebrow: "Premium Beach Life",
+      mobileEyebrow: "Club de vòlei platja · Maresme",
+      titleLine1: "BEACH VOLLEY",
+      titleHighlight: "EL MASNOU",
+      subtitle:
+        "Viu l'energia de la competició d'alt nivell en un entorn exclusiu davant del Mediterrani. Formem atletes, construïm comunitat.",
+      ctaJoin: "UNEIX-TE AL CLUB",
+      ctaSchedule: "VEURE HORARIS",
+      hookTitle: "Pista, Sol i Passió",
+      hookText:
+        "Situat al cor d'El Masnou, el nostre club ofereix instal·lacions de primer nivell per a jugadors de tots els nivells. Des de classes per a principiants fins a entrenaments d'alt rendiment, fusionem l'esperit competitiu del vòlei platja amb un estil de vida social inigualable.",
+      collage: {
+        eyebrow: "Moments CBVEM",
+        title: "Viu Cada Punt"
+      },
+      bento: {
+        trainingTitle: "Entrenaments",
+        trainingText: "Sessions personalitzades per nivells dirigides per entrenadors professionals.",
+        trainingCta: "SABER-NE MÉS",
+        tournamentsTitle: "Torneigs",
+        tournamentsText: "Competeix a les nostres lligues internes i torneigs Open durant tot l'any.",
+        tournamentsCta: "CALENDARI",
+        campsTitle: "Camps i Esdeveniments",
+        campsText: "Experiències immersives, clínics intensius i esdeveniments socials exclusius.",
+        campsCta: "DESCOBRIR"
+      },
+      lead: {
+        eyebrow: "Forma Part de Nosaltres",
+        titleLine1: "SOL·LICITA LA TEVA",
+        titleHighlight: "PROVA GRATUÏTA",
+        text: "Deixa'ns les teves dades i un entrenador es posarà en contacte amb tu per assignar-te el grup que millor s'adapti al teu nivell.",
+        bullet1: "Avaluació de nivell gratuïta",
+        bullet2: "Accés a vestidors i zona chill-out",
+        bullet3: "Material tècnic d'alta gamma inclòs",
+        whatsapp: "Escriu-nos per WhatsApp"
+      }
+    },
+    leadForm: {
+      nameLabel: "Nom Complet",
+      namePlaceholder: "Ex. Marc Rovira",
+      emailLabel: "Email",
+      emailPlaceholder: "hola@exemple.com",
+      phoneLabel: "Telèfon",
+      levelLabel: "Selector de Nivell",
+      levelBeginner: "Principiant (Zero)",
+      levelStarter: "Iniciació (Sé jugar)",
+      levelIntermediate: "Intermedi",
+      levelAdvanced: "Avançat / Pro",
+      submit: "Enviar sol·licitud"
+    },
+    entrenamientos: {
+      badge: "TEMPORADA 2026",
+      heroTitleLine1: "ESCOLA I GRUPS DE",
+      heroTitleLine2: "ENTRENAMENT",
+      mobileHeroLine1: "ESCOLA I",
+      mobileHeroLine2: "GRUPS DE",
+      mobileHeroLine3: "ENTRENAMENT",
+      heroSubtitle:
+        "Perfecciona la teva tècnica a les millors platges amb un sistema d'entrenament adaptat a tots els nivells. Des dels teus primers passos fins a l'alta competició.",
+      scheduleTitle: "Horaris Setmanals",
+      scheduleSubtitle: "Tria l'horari que millor s'adapti al teu ritme de vida.",
+      ctaKnowLevel: "Contacta'm per conèixer el teu nivell",
+      levelIniciacion: "Iniciació",
+      levelIntermedio: "Intermedi",
+      levelAvanzado: "Avançat",
+      levelCompeticion: "Competició",
+      levelSub17: "Sub-17",
+      onlyAvailable: "Només amb plaça",
+      freeShort: "lliures",
+      filterAll: "Tots",
+      emptyDayFiltered: "No hi ha grups amb aquest filtre aquest dia.",
+      spotsComplete: "Complet",
+      spotsAvailable: "Hi ha lloc",
+      spotsUnitSingular: "plaça",
+      spotsUnitPlural: "places",
+      categoryFemenino: "Femení",
+      categoryMasculino: "Masculí",
+      categoryMixto: "Mixt",
+      categoryJuvenil: "Juvenil",
+      days: {
+        monday: "Dilluns",
+        tuesday: "Dimarts",
+        wednesday: "Dimecres",
+        thursday: "Dijous",
+        friday: "Divendres"
+      },
+      daysShort: {
+        monday: "Dl",
+        tuesday: "Dt",
+        wednesday: "Dc",
+        thursday: "Dj",
+        friday: "Dv"
+      },
+      levelsTitle: "Els Nostres Nivells",
+      levels: {
+        iniciacionTitle: "Iniciació",
+        iniciacionText:
+          "Aprèn els fonaments bàsics: toc de dits, avantbraços i servei. Perfecte per a qui mai ha jugat o porta poc temps.",
+        intermedioTitle: "Intermedi",
+        intermedioText:
+          "Millora el teu control de joc, tàctica de camp i rematada. Enfocat a jugadors amb experiència prèvia en pista o platja.",
+        avanzadoTitle: "Avançat",
+        avanzadoText:
+          "Ritme competitiu, tàctica situacional i ajustos per parella. Per a jugadors consolidats que busquen fer el salt de qualitat.",
+        competicionTitle: "Competició",
+        competicionText:
+          "Entrenament d'alt rendiment. Preparació per a torneigs, sistemes defensius complexos i perfeccionament tècnic extrem.",
+        sub17Title: "Sub-17",
+        sub17Text:
+          "Grup juvenil per a jugadors fins a 17 anys, amb una progressió tècnica i física adaptada a la seva edat."
+      }
+    },
+    openTryouts: {
+      badge: "Temporada 2027",
+      title: "Obrim places! Temporada 2027",
+      subtitle: "Lliga Nacional de Catalunya (Cat. Masculina i Femenina)",
+      lookingFor: "Busquem jugadors!",
+      text: "Forma part dels equips del nostre club i competeix a la Lliga Nacional.",
+      requisitos: "Requisits",
+      req1: "Experiència competint",
+      req2: "Compromís",
+      cta: "Vull apuntar-me",
+      catTag: "(Cat. Masculina i Femenina)"
+    },
+    torneos: {
+      badge: "TEMPORADA 2026",
+      heroTitleLine1: "TORNEIGS",
+      heroTitleHighlight: "CBVEM",
+      heroSubtitle:
+        "La sorra d'El Masnou es converteix en l'epicentre del vòlei platja nacional. Competició d'alt nivell, música i el millor ambient de club.",
+      ctaFullCalendar: "CALENDARI COMPLET",
+      ctaRules: "REGLAMENT",
+      upcomingTitle: "Pròxims Torneigs",
+      comingSoon: "PRÒXIMAMENT",
+      calendarCategory: "Calendari Competicions",
+      place: "Pista Central CBVEM",
+      cta: "Inscriure's",
+      names: {
+        mixto: "MIXT",
+        mixtoBasico: "MIXT BÀSIC",
+        eliteFemenino: "ÈLITE FEMENINA",
+        eliteMasculino: "ÈLITE MASCULINA"
+      },
+      winnersTitle: "Els Nostres Guanyadors",
+      winnersSubtitle:
+        "Celebrem el talent i l'esforç dels campions de les nostres lligues i torneigs passats.",
+      winners: {
+        claudia: "CAMPIONES ELITE OPEN MAIG",
+        girona: "CAMPIONS 4X4 SPRING FEST",
+        sergio: "MVP TEMPORADA HIVERN",
+        sandstorm: "CAMPIONS MIXT INTERCLUB"
+      },
+      coachesTitle: "Els Nostres Entrenadors",
+      coachesSubtitle: "L'equip que forma els nostres jugadors dins i fora de la sorra.",
+      coaches: {
+        davidRole: "Soci - Entrenador",
+        oscarRole: "Entrenador"
+      },
+      communityTitle: "Uneix-te a la Comunitat",
+      communityText:
+        "Subscriu-te per rebre notificacions exclusives d'obertures d'inscripcions, torneigs flash i esdeveniments especials a la platja.",
+      newsletterPlaceholder: "EL TEU EMAIL",
+      newsletterButton: "SUBSCRIURE'M"
+    },
+    eventosCamps: {
+      badge: "EXPERIÈNCIES PREMIUM",
+      heroTitle: "CAMPS INTENSIUS I CLÍNICS",
+      heroSubtitle:
+        "Perfecciona la teva tècnica amb entrenadors d'elit a l'entorn exclusiu de la costa del Maresme.",
+      featuredBadge: "ÚLTIMS DIES D'EARLY BIRD",
+      featuredTitle: "CAMP TENERIFE 2027",
+      featuredDate: "21 - 24 DE GENER 2027",
+      featuredText:
+        "Immersió total a Tenerife amb doble sessió diària, anàlisi de vídeo personalitzat i preparació física específica per a sorra.",
+      priceTriple: "/ habitació triple",
+      priceDouble: "/ habitació doble",
+      cta: "Apuntar-se",
+      clinicsTitle: "PRÒXIMS CLÍNICS",
+      clinicsSubtitle: "Sessions intensives amb estrelles internacionals",
+      clinicsCtaText: "Vols fer el teu camp o clínic a la seu de BVM?",
+      clinicsCtaButton: "Parlem",
+      dateLabel: "DATA",
+      julianTitle: "CLÍNIC AMB JULIAN",
+      julianText: "Properament obrirem les inscripcions per a aquest clínic.",
+      julianDate: "20 DE JUNY",
+      comingSoon: "PROPERAMENT",
+      tbaTitle: "PER ANUNCIAR",
+      tbaText: "Estem tancant la data i el formador d'aquest clínic.",
+      whyTitle: "PER QUÈ ELS NOSTRES CAMPS",
+      why1Title: "Grups reduïts",
+      why1Text:
+        "Treballem amb grups petits i organitzats per nivell, perquè cada jugador toqui la pilota moltes més vegades, rebi correccions individuals i progressi de veritat durant tota la setmana.",
+      why2Title: "Entrenadors professionals",
+      why2Text:
+        "El nostre equip tècnic està format per entrenadors titulats i jugadors amb recorregut real en competició, capaços de detectar el detall que frena cada jugador, corregir-lo amb proximitat i bon rotllo.",
+      why3Title: "Torneigs, diversió i bon ambient",
+      why3Text:
+        "Entre torneigs interns, reptes per equips i jocs a la sorra, cada dia és diferent i molts acaben emportant-se, a més d'un millor nivell, amics i ganes de repetir.",
+      ctaTitle: "VOLS SER EL PRIMER A SABER-HO?",
+      ctaText:
+        "Subscriu-te per rebre notificacions exclusives sobre nous Camps, Clínics i ofertes de \"Last Minute\".",
+      newsletterPlaceholder: "EL TEU CORREU ELECTRÒNIC",
+      newsletterButton: "UNIR-ME A LA LLISTA"
     }
   }
 } as const;

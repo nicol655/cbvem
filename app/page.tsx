@@ -3,7 +3,6 @@
 import Link from "next/link";
 
 import { HomeHeroCollage } from "@/components/HomeHeroCollage";
-import { LeadForm } from "@/components/LeadForm";
 import { useLanguage } from "@/components/LanguageProvider";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -98,44 +97,37 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Lead form */}
+        {/* Free trial CTA */}
         <section className="py-section-mobile md:py-section-desktop relative bg-surface-container-low overflow-hidden" id="solicitud">
           <div className="absolute inset-0 beach-grain pointer-events-none" />
           <div className="max-w-container-max mx-auto px-gutter relative z-10">
-            <div className="bg-white rounded-[5px] p-8 md:p-16 shadow-[0_40px_80px_-20px_rgba(43,43,73,0.12)] flex flex-col lg:flex-row gap-12 lg:gap-16">
-              <ScrollReveal className="lg:w-2/5">
-                <span className="font-label-bold text-label-bold text-secondary uppercase tracking-[0.2em] mb-4 block">
-                  {t("home.lead.eyebrow")}
-                </span>
-                <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase mb-6">
-                  {t("home.lead.titleLine1")} <br />
-                  <span className="text-secondary">{t("home.lead.titleHighlight")}</span>
-                </h2>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-8">
-                  {t("home.lead.text")}
-                </p>
-                <ul className="space-y-4">
-                  {[t("home.lead.bullet1"), t("home.lead.bullet2"), t("home.lead.bullet3")].map((item) => (
-                    <li key={item} className="flex items-center gap-3 text-on-surface font-body-md">
-                      <span className="material-symbols-outlined fill text-secondary">check_circle</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href={WHATSAPP_DEFAULT}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 mt-8 font-label-bold text-label-bold text-primary hover:text-secondary transition-colors"
-                >
-                  <span className="material-symbols-outlined">chat</span>
-                  {t("home.lead.whatsapp")}
-                </a>
-              </ScrollReveal>
-              <ScrollReveal delay={0.15} className="lg:w-3/5">
-                <LeadForm />
-              </ScrollReveal>
-            </div>
+            <ScrollReveal className="bg-white rounded-[5px] p-8 md:p-16 shadow-[0_40px_80px_-20px_rgba(43,43,73,0.12)] max-w-2xl mx-auto text-center flex flex-col items-center">
+              <span className="font-label-bold text-label-bold text-secondary uppercase tracking-[0.2em] mb-4 block">
+                {t("home.lead.eyebrow")}
+              </span>
+              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase mb-6">
+                {t("home.lead.titleLine1")} <br />
+                <span className="text-secondary">{t("home.lead.titleHighlight")}</span>
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant mb-8">{t("home.lead.text")}</p>
+              <ul className="space-y-4 text-left mb-10">
+                {[t("home.lead.bullet1"), t("home.lead.bullet2"), t("home.lead.bullet3")].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-on-surface font-body-md">
+                    <span className="material-symbols-outlined fill text-secondary">check_circle</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={WHATSAPP_DEFAULT}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-shine bg-secondary text-on-secondary font-label-bold text-label-bold px-10 py-4 rounded-[5px] shadow-lg inline-flex items-center gap-2"
+              >
+                <span className="material-symbols-outlined">chat</span>
+                {t("home.lead.whatsapp")}
+              </a>
+            </ScrollReveal>
           </div>
         </section>
       </main>

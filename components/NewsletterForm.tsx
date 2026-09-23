@@ -30,8 +30,8 @@ export function NewsletterForm({
 
   const inputClass =
     variant === "dark"
-      ? "flex-grow bg-white/10 border-white/20 text-white placeholder-white/60 rounded-full px-8 py-4 focus:ring-secondary focus:border-secondary transition-all"
-      : "w-full bg-white border-outline-variant rounded-full px-6 py-4 font-label-bold text-label-bold focus:ring-secondary focus:border-secondary transition-all";
+      ? "flex-grow bg-white/10 border-white/20 text-white placeholder-white/60 rounded-[5px] px-8 py-4 focus:ring-secondary focus:border-secondary transition-all"
+      : "w-full bg-white border-outline-variant rounded-[5px] px-6 py-4 font-label-bold text-label-bold focus:ring-secondary focus:border-secondary transition-all";
 
   const buttonClass =
     variant === "dark"
