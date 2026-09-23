@@ -22,5 +22,5 @@ export function whatsappHref(message: string): string {
 }
 
 export const WHATSAPP_DEFAULT = whatsappHref(
-  "Hola CBVEM, quiero reservar una clase de prueba gratuita."
+  "Hola CBVEM, me gustaría reservar una clase de prueba gratuita. ¿Qué días tenéis disponibles?"
 );

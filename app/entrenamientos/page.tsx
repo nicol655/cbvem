@@ -5,7 +5,7 @@ import { EntrenamientosContent } from "@/components/EntrenamientosContent";
 export const metadata: Metadata = {
   title: "Entrenamientos | CBVEM",
   description:
-    "Escuela y grupos de entrenamiento de beach volley por niveles en El Masnou: iniciación, intermedio y élite."
+    "Escuela y grupos de entrenamiento de beach volley por niveles en El Masnou: iniciación, intermedio, avanzado y competición."
 };
 
 export default function EntrenamientosPage() {

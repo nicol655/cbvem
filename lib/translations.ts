@@ -8,7 +8,7 @@ export const translations = {
       home: "Inicio",
       training: "Entrenamientos",
       tournaments: "Torneos",
-      camps: "Camps y Eventos",
+      camps: "Camps y eventos",
       cta: "RESERVAR CLASE GRATIS",
       bookingBarText: "Primera clase gratis",
       bookingBarCta: "RESERVAR",
@@ -17,7 +17,7 @@ export const translations = {
     },
     footer: {
       tagline:
-        "El club referente de voley playa en El Masnou. Pasión, deporte y estilo de vida mediterráneo en cada entrenamiento.",
+        "El club referente de vóley playa en El Masnou. Pasión, deporte y estilo de vida mediterráneo en cada entrenamiento.",
       explore: "Explorar",
       contact: "Contacto",
       rights: "Todos los derechos reservados.",
@@ -35,15 +35,15 @@ export const translations = {
       titleLine1: "BEACH VOLLEY",
       titleHighlight: "EL MASNOU",
       subtitle:
-        "Experimenta la energía de la alta competición en un entorno exclusivo frente al Mediterráneo. Formamos atletas, construimos comunidad.",
+        "Vive la energía de la alta competición en un entorno exclusivo frente al Mediterráneo. Formamos atletas, construimos comunidad.",
       ctaJoin: "ÚNETE AL CLUB",
       ctaSchedule: "VER HORARIOS",
-      hookTitle: "Pista, Sol y Pasión",
+      hookTitle: "Pista, sol y pasión",
       hookText:
         "Situado en el corazón de El Masnou, nuestro club ofrece instalaciones de primer nivel para jugadores de todos los niveles. Desde clases para principiantes hasta entrenamientos de alto rendimiento, fusionamos el espíritu competitivo del beach volley con un estilo de vida social inigualable.",
       collage: {
         eyebrow: "Momentos CBVEM",
-        title: "Vive Cada Punto"
+        title: "Vive cada punto"
       },
       bento: {
         trainingTitle: "Entrenamientos",
@@ -52,12 +52,12 @@ export const translations = {
         tournamentsTitle: "Torneos",
         tournamentsText: "Compite en nuestras ligas internas y torneos Open durante todo el año.",
         tournamentsCta: "CALENDARIO",
-        campsTitle: "Camps & Eventos",
-        campsText: "Experiencias inmersivas, clinics intensivos y eventos sociales exclusivos.",
+        campsTitle: "Camps y eventos",
+        campsText: "Experiencias inmersivas, clínics intensivos y eventos sociales exclusivos.",
         campsCta: "DESCUBRIR"
       },
       lead: {
-        eyebrow: "Forma Parte de Nosotros",
+        eyebrow: "Forma parte del club",
         titleLine1: "SOLICITA TU",
         titleHighlight: "PRUEBA GRATIS",
         text: "Déjanos tus datos y un entrenador se pondrá en contacto contigo para asignarte el grupo que mejor se adapte a tu nivel.",
@@ -68,14 +68,14 @@ export const translations = {
       }
     },
     leadForm: {
-      nameLabel: "Nombre Completo",
+      nameLabel: "Nombre completo",
       namePlaceholder: "Ej. Marc Rovira",
       emailLabel: "Email",
       emailPlaceholder: "hola@ejemplo.com",
       phoneLabel: "Teléfono",
-      levelLabel: "Selector de Nivel",
-      levelBeginner: "Principiante (Cero)",
-      levelStarter: "Iniciación (Sé jugar)",
+      levelLabel: "Tu nivel",
+      levelBeginner: "Principiante (desde cero)",
+      levelStarter: "Iniciación (ya sé jugar)",
       levelIntermediate: "Intermedio",
       levelAdvanced: "Avanzado / Pro",
       submit: "Enviar solicitud"
@@ -89,15 +89,15 @@ export const translations = {
       mobileHeroLine3: "ENTRENAMIENTO",
       heroSubtitle:
         "Perfecciona tu técnica en las mejores playas con un sistema de entrenamiento adaptado a todos los niveles. Desde tus primeros pasos hasta la alta competición.",
-      scheduleTitle: "Horarios Semanales",
+      scheduleTitle: "Horarios semanales",
       scheduleSubtitle: "Elige el horario que mejor se adapte a tu ritmo de vida.",
-      ctaKnowLevel: "Contáctame para conocer tu nivel",
+      ctaKnowLevel: "Escríbeme y te digo cuál es tu nivel",
       levelIniciacion: "Iniciación",
       levelIntermedio: "Intermedio",
       levelAvanzado: "Avanzado",
       levelCompeticion: "Competición",
       levelSub17: "Sub-17",
-      onlyAvailable: "Solo con plaza",
+      onlyAvailable: "Solo con plazas libres",
       freeShort: "libres",
       filterAll: "Todos",
       emptyDayFiltered: "No hay grupos con ese filtro este día.",
@@ -123,20 +123,20 @@ export const translations = {
         thursday: "Jue",
         friday: "Vie"
       },
-      levelsTitle: "Nuestros Niveles",
+      levelsTitle: "Nuestros niveles",
       levels: {
         iniciacionTitle: "Iniciación",
         iniciacionText:
-          "Aprende los fundamentos básicos: toque de dedos, antebrazos y saque. Perfecto para quienes nunca han jugado o llevan poco tiempo.",
+          "Aprende los fundamentos básicos: toque de dedos, antebrazo y saque. Perfecto para quienes nunca han jugado o llevan poco tiempo.",
         intermedioTitle: "Intermedio",
         intermedioText:
-          "Mejora tu control de juego, táctica de campo y remate. Enfocado en jugadores con experiencia previa en pista o playa.",
+          "Mejora tu control del juego, la táctica en pista y el remate. Pensado para jugadores con experiencia previa en pista o en playa.",
         avanzadoTitle: "Avanzado",
         avanzadoText:
-          "Ritmo competitivo, táctica situacional y ajustes por pareja. Para jugadores consolidados que buscan dar el salto de calidad.",
+          "Ritmo de competición, lectura de juego y trabajo en pareja. Para jugadores consolidados que quieren dar el salto de nivel.",
         competicionTitle: "Competición",
         competicionText:
-          "Entrenamiento de alto rendimiento. Preparación para torneos, sistemas defensivos complejos y perfeccionamiento técnico extremo.",
+          "Entrenamiento de alto rendimiento. Preparación para torneos, sistemas defensivos avanzados y perfeccionamiento técnico al detalle.",
         sub17Title: "Sub-17",
         sub17Text:
           "Grupo juvenil para jugadores de hasta 17 años, con una progresión técnica y física adaptada a su edad."
@@ -145,94 +145,92 @@ export const translations = {
     openTryouts: {
       badge: "Temporada 2027",
       title: "¡Abrimos plazas! Temporada 2027",
-      subtitle: "Liga Nacional de Cataluña (Cat. Masculina y Femenina)",
+      subtitle: "Liga Nacional de Cataluña (categorías masculina y femenina)",
       lookingFor: "¡Buscamos jugadores!",
-      text: "Forma parte de los equipos de nuestro club y compite en la Liga Nacional.",
+      text: "Entra en los equipos del club y compite en la Liga Nacional.",
       requisitos: "Requisitos",
       req1: "Experiencia compitiendo",
       req2: "Compromiso",
       cta: "Quiero apuntarme",
-      catTag: "(Cat. Masculina y Femenina)"
+      catTag: "(categorías masculina y femenina)"
     },
     torneos: {
       badge: "TEMPORADA 2026",
       heroTitleLine1: "TORNEOS",
-      heroTitleHighlight: "CBVEM",
+      heroTitleHighlight: "BVM",
       heroSubtitle:
-        "La arena de El Masnou se convierte en el epicentro del voley playa nacional. Competición de alto nivel, música y el mejor ambiente de club.",
+        "La arena de El Masnou se convierte en el epicentro del vóley playa nacional. Competición de alto nivel, música y el mejor ambiente de club.",
       ctaFullCalendar: "CALENDARIO COMPLETO",
-      ctaRules: "REGLAMENTO",
-      upcomingTitle: "Próximos Torneos",
+      upcomingTitle: "Próximos torneos",
       comingSoon: "PRÓXIMAMENTE",
-      calendarCategory: "Calendario Competiciones",
-      place: "Pista Central CBVEM",
-      cta: "Inscribirse",
+      calendarCategory: "Calendario de competiciones",
+      place: "Pista central CBVEM",
+      cta: "Inscríbete",
       names: {
         mixto: "MIXTO",
         mixtoBasico: "MIXTO BÁSICO",
         eliteFemenino: "ÉLITE FEMENINO",
         eliteMasculino: "ÉLITE MASCULINO"
       },
-      winnersTitle: "Nuestros Ganadores",
+      winnersTitle: "Nuestros ganadores",
       winnersSubtitle:
         "Celebramos el talento y el esfuerzo de los campeones de nuestras ligas y torneos pasados.",
       winners: {
-        claudia: "CAMPEONAS ELITE OPEN MAYO",
+        claudia: "CAMPEONAS ÉLITE OPEN DE MAYO",
         girona: "CAMPEONES 4X4 SPRING FEST",
-        sergio: "MVP TEMPORADA INVIERNO",
+        sergio: "MVP TEMPORADA DE INVIERNO",
         sandstorm: "CAMPEONES MIXTO INTERCLUB"
       },
-      coachesTitle: "Nuestros Entrenadores",
+      coachesTitle: "Nuestros entrenadores",
       coachesSubtitle: "El equipo que forma a nuestros jugadores dentro y fuera de la arena.",
+      coachCtaTitle: "Únete a Beach Volley El Masnou",
+      coachCtaText:
+        "Buscamos entrenadores con pasión, experiencia y ganas de enseñar que quieran formar parte del team BVM.",
+      coachCtaButton: "CUÉNTAME SOBRE TI Y TU EXPERIENCIA",
       coaches: {
-        davidRole: "Socio - Entrenador",
+        davidRole: "Socio y entrenador",
         oscarRole: "Entrenador"
       },
-      communityTitle: "Únete a la Comunidad",
-      communityText:
-        "Suscríbete para recibir notificaciones exclusivas de aperturas de inscripciones, torneos flash y eventos especiales en la playa.",
-      newsletterPlaceholder: "TU EMAIL",
-      newsletterButton: "SUSCRIBIRME"
     },
     eventosCamps: {
       badge: "EXPERIENCIAS PREMIUM",
       heroTitle: "CAMPS INTENSIVOS Y CLÍNICS",
       heroSubtitle:
-        "Perfecciona tu técnica con entrenadores de élite en el entorno exclusivo de la costa del Maresme.",
+        "Perfecciona tu técnica con entrenadores de élite en plena costa del Maresme.",
       featuredBadge: "ÚLTIMOS DÍAS DE EARLY BIRD",
       featuredTitle: "CAMP TENERIFE 2027",
-      featuredDate: "21 - 24 DE ENERO 2027",
+      featuredDate: "DEL 21 AL 24 DE ENERO DE 2027",
       featuredText:
-        "Inmersión total en Tenerife con doble sesión diaria, análisis de vídeo personalizado y preparación física específica para arena.",
+        "Cuatro días en Tenerife con doble sesión diaria, análisis de vídeo personalizado y preparación física específica para arena.",
       priceTriple: "/ habitación triple",
       priceDouble: "/ habitación doble",
-      cta: "Apuntarse",
+      cta: "Apúntate",
       clinicsTitle: "PRÓXIMOS CLÍNICS",
-      clinicsSubtitle: "Sesiones intensivas con estrellas internacionales",
+      clinicsSubtitle: "Sesiones intensivas con jugadores internacionales",
       clinicsCtaText: "¿Quieres hacer tu camp o clínic en la sede de BVM?",
       clinicsCtaButton: "Hablemos",
       dateLabel: "FECHA",
       julianTitle: "CLÍNIC CON JULIAN",
-      julianText: "Próximamente abriremos las inscripciones para este clínic.",
-      julianDate: "20 JUNIO",
+      julianText: "Clínic finalizado. ¡Gracias a todos los que participasteis!",
+      julianMonth: "Junio",
+      dateTbc: "Por confirmar",
+      completed: "Completado",
       comingSoon: "PRÓXIMAMENTE",
       tbaTitle: "POR ANUNCIAR",
-      tbaText: "Estamos cerrando la fecha y el formador de este clínic.",
-      whyTitle: "POR QUÉ NUESTROS CAMPS",
+      tbaText: "Estamos cerrando la fecha y el entrenador de este clínic.",
+      whyTitle: "¿POR QUÉ NUESTROS CAMPS?",
       why1Title: "Grupos reducidos",
       why1Text:
         "Trabajamos con grupos pequeños y organizados por nivel, para que cada jugador toque el balón muchas más veces, reciba correcciones individuales y progrese de verdad durante toda la semana.",
       why2Title: "Entrenadores profesionales",
       why2Text:
-        "Nuestro equipo técnico está formado por entrenadores titulados y jugadores con recorrido real en competición, capaces de detectar el detalle que frena a cada jugador, corregirlo con cercanía y buen rollo.",
+        "Nuestro equipo técnico está formado por entrenadores titulados y jugadores con recorrido real en competición, que saben detectar el detalle que frena a cada jugador y corregirlo con cercanía y buen rollo.",
       why3Title: "Torneos, diversión y buen ambiente",
       why3Text:
-        "Entre torneos internos, retos por equipos y juegos en la arena, cada día es distinto y muchos acaban llevándose, además de un mejor nivel, amigos y ganas de repetir.",
-      ctaTitle: "¿QUIERES SER EL PRIMERO EN SABERLO?",
+        "Entre torneos internos, retos por equipos y juegos en la arena, cada día es distinto. Muchos se llevan, además de un mejor nivel, amigos y ganas de repetir.",
+      ctaTitle: "¿QUIERES SER EL PRIMERO EN ENTERARTE?",
       ctaText:
-        "Suscríbete para recibir notificaciones exclusivas sobre nuevos Camps, Clínics y ofertas de “Last Minute”.",
-      newsletterPlaceholder: "TU CORREO ELECTRÓNICO",
-      newsletterButton: "UNIRME A LA LISTA"
+        "Suscríbete y te avisaremos antes que a nadie de nuevos camps, clínics y ofertas de última hora.",
     }
   },
   en: {
@@ -388,11 +386,10 @@ export const translations = {
     torneos: {
       badge: "SEASON 2026",
       heroTitleLine1: "TOURNAMENTS",
-      heroTitleHighlight: "CBVEM",
+      heroTitleHighlight: "BVM",
       heroSubtitle:
         "The sand of El Masnou becomes the epicenter of national beach volleyball. Top-level competition, music and the best club atmosphere.",
       ctaFullCalendar: "FULL CALENDAR",
-      ctaRules: "RULES",
       upcomingTitle: "Upcoming Tournaments",
       comingSoon: "COMING SOON",
       calendarCategory: "Competition Calendar",
@@ -414,15 +411,14 @@ export const translations = {
       },
       coachesTitle: "Our Coaches",
       coachesSubtitle: "The team that shapes our players on and off the sand.",
+      coachCtaTitle: "Join Beach Volley El Masnou",
+      coachCtaText:
+        "We are looking for passionate coaches who want to be part of team BVM, with experience and a drive to teach.",
+      coachCtaButton: "TELL ME ABOUT YOU AND YOUR EXPERIENCE",
       coaches: {
         davidRole: "Partner - Coach",
         oscarRole: "Coach"
       },
-      communityTitle: "Join the Community",
-      communityText:
-        "Subscribe to receive exclusive notifications about registration openings, flash tournaments and special events on the beach.",
-      newsletterPlaceholder: "YOUR EMAIL",
-      newsletterButton: "SUBSCRIBE"
     },
     eventosCamps: {
       badge: "PREMIUM EXPERIENCES",
@@ -442,8 +438,10 @@ export const translations = {
       clinicsCtaButton: "Let's talk",
       dateLabel: "DATE",
       julianTitle: "CLINIC WITH JULIAN",
-      julianText: "Registration for this clinic will open soon.",
-      julianDate: "JUNE 20",
+      julianText: "Clinic finished. Thanks to everyone who took part!",
+      julianMonth: "June",
+      dateTbc: "To be confirmed",
+      completed: "Completed",
       comingSoon: "COMING SOON",
       tbaTitle: "TO BE ANNOUNCED",
       tbaText: "We're finalizing the date and coach for this clinic.",
@@ -456,8 +454,6 @@ export const translations = {
       why3Text: "Optional premium accommodation and healthy catering included.",
       ctaTitle: "WANT TO BE THE FIRST TO KNOW?",
       ctaText: "Subscribe to receive exclusive notifications about new Camps, Clinics and “Last Minute” offers.",
-      newsletterPlaceholder: "YOUR EMAIL",
-      newsletterButton: "JOIN THE LIST"
     }
   },
   ca: {
@@ -614,11 +610,10 @@ export const translations = {
     torneos: {
       badge: "TEMPORADA 2026",
       heroTitleLine1: "TORNEIGS",
-      heroTitleHighlight: "CBVEM",
+      heroTitleHighlight: "BVM",
       heroSubtitle:
         "La sorra d'El Masnou es converteix en l'epicentre del vòlei platja nacional. Competició d'alt nivell, música i el millor ambient de club.",
       ctaFullCalendar: "CALENDARI COMPLET",
-      ctaRules: "REGLAMENT",
       upcomingTitle: "Pròxims Torneigs",
       comingSoon: "PRÒXIMAMENT",
       calendarCategory: "Calendari Competicions",
@@ -641,15 +636,14 @@ export const translations = {
       },
       coachesTitle: "Els Nostres Entrenadors",
       coachesSubtitle: "L'equip que forma els nostres jugadors dins i fora de la sorra.",
+      coachCtaTitle: "Uneix-te a Beach Volley El Masnou",
+      coachCtaText:
+        "Busquem entrenadors amb passió que vulguin formar part del team BVM, amb experiència i ganes d'ensenyar.",
+      coachCtaButton: "EXPLICA'M SOBRE TU I LA TEVA EXPERIÈNCIA",
       coaches: {
         davidRole: "Soci - Entrenador",
         oscarRole: "Entrenador"
       },
-      communityTitle: "Uneix-te a la Comunitat",
-      communityText:
-        "Subscriu-te per rebre notificacions exclusives d'obertures d'inscripcions, torneigs flash i esdeveniments especials a la platja.",
-      newsletterPlaceholder: "EL TEU EMAIL",
-      newsletterButton: "SUBSCRIURE'M"
     },
     eventosCamps: {
       badge: "EXPERIÈNCIES PREMIUM",
@@ -670,8 +664,10 @@ export const translations = {
       clinicsCtaButton: "Parlem",
       dateLabel: "DATA",
       julianTitle: "CLÍNIC AMB JULIAN",
-      julianText: "Properament obrirem les inscripcions per a aquest clínic.",
-      julianDate: "20 DE JUNY",
+      julianText: "Clínic finalitzat. Gràcies a tots els que hi vau participar!",
+      julianMonth: "Juny",
+      dateTbc: "Per confirmar",
+      completed: "Completat",
       comingSoon: "PROPERAMENT",
       tbaTitle: "PER ANUNCIAR",
       tbaText: "Estem tancant la data i el formador d'aquest clínic.",
@@ -688,8 +684,6 @@ export const translations = {
       ctaTitle: "VOLS SER EL PRIMER A SABER-HO?",
       ctaText:
         "Subscriu-te per rebre notificacions exclusives sobre nous Camps, Clínics i ofertes de \"Last Minute\".",
-      newsletterPlaceholder: "EL TEU CORREU ELECTRÒNIC",
-      newsletterButton: "UNIR-ME A LA LLISTA"
     }
   }
 } as const;

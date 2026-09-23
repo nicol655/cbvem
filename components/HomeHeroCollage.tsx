@@ -20,7 +20,7 @@ type CollageImage = {
 const IMAGES: CollageImage[] = [
   {
     src: "/images/torneo_femenino.jpg",
-    alt: "Jugadora de élite femenino en pleno remate",
+    alt: "Jugadora de élite en pleno remate",
     from: "top",
     desktop: "md:[grid-column:1/2] md:[grid-row:1/4]"
   },
@@ -133,13 +133,13 @@ export function HomeHeroCollage() {
               href={WHATSAPP_DEFAULT}
               target="_blank"
               rel="noreferrer"
-              className="btn-shine bg-secondary text-on-secondary font-label-bold text-label-bold px-10 py-5 rounded-[5px] shadow-lg"
+              className="btn-shine uppercase bg-secondary text-on-secondary font-label-bold text-label-bold px-10 py-5 rounded-[5px] shadow-lg"
             >
               {t("home.ctaJoin")}
             </a>
             <Link
               href="/entrenamientos"
-              className="btn-shine border-2 border-white text-white font-label-bold text-label-bold px-10 py-5 rounded-[5px]"
+              className="btn-shine uppercase border-2 border-white text-white font-label-bold text-label-bold px-10 py-5 rounded-[5px]"
             >
               {t("home.ctaSchedule")}
             </Link>
@@ -199,13 +199,13 @@ export function HomeHeroCollage() {
               href={WHATSAPP_DEFAULT}
               target="_blank"
               rel="noreferrer"
-              className="btn-shine w-full min-h-[48px] flex items-center justify-center bg-secondary text-on-secondary font-label-bold text-label-bold rounded-[5px] shadow-lg"
+              className="btn-shine uppercase w-full min-h-[48px] flex items-center justify-center bg-secondary text-on-secondary font-label-bold text-label-bold rounded-[5px] shadow-lg"
             >
               {t("home.ctaJoin")}
             </a>
             <Link
               href="/entrenamientos"
-              className="btn-shine w-full min-h-[48px] flex items-center justify-center border-2 border-white text-white font-label-bold text-label-bold rounded-[5px]"
+              className="btn-shine uppercase w-full min-h-[48px] flex items-center justify-center border-2 border-white text-white font-label-bold text-label-bold rounded-[5px]"
             >
               {t("home.ctaSchedule")}
             </Link>

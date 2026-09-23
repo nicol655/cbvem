@@ -141,7 +141,7 @@ export function EntrenamientosHero() {
             <div className="w-[32%] max-w-md aspect-[3/4] overflow-hidden shadow-2xl">
               <img
                 className="w-full h-full object-cover"
-                alt="Jugadora élite femenino"
+                alt="Jugadora de élite"
                 src={asset("/images/new_scroll.jpg")}
               />
             </div>
@@ -168,7 +168,7 @@ export function EntrenamientosHero() {
             </p>
             <a
               href={`#${SCHEDULE_SECTION_ID}`}
-              className="btn-shine mt-8 w-full min-h-[48px] flex items-center justify-center border-2 border-white text-white font-label-bold text-label-bold rounded-[5px]"
+              className="btn-shine uppercase mt-8 w-full min-h-[48px] flex items-center justify-center border-2 border-white text-white font-label-bold text-label-bold rounded-[5px]"
             >
               {t("home.ctaSchedule")}
             </a>

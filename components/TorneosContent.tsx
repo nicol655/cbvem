@@ -1,7 +1,6 @@
 "use client";
 
 import { useLanguage } from "@/components/LanguageProvider";
-import { NewsletterForm } from "@/components/NewsletterForm";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteNav } from "@/components/SiteNav";
@@ -46,10 +45,10 @@ const TOURNAMENTS = [
 const COACHES = [
   { img: "/images/David_foto.png", name: "David Martín", roleKey: "davidRole", objectPosition: undefined as string | undefined },
   {
-    img: "/images/Oscar_Feltrer.jpg",
+    img: "/images/Oscar_Feltrer_crop.jpg",
     name: "Oscar Feltrer",
     roleKey: "oscarRole",
-    objectPosition: "85% 45%"
+    objectPosition: "55% 10%"
   }
 ];
 
@@ -82,20 +81,10 @@ export function TorneosContent() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href={whatsappHref("Hola CBVEM, quiero el calendario completo de torneos.")}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-shine bg-secondary text-white w-full sm:w-auto px-4 sm:px-8 py-4 rounded-[5px] font-label-bold text-label-bold text-center whitespace-nowrap transition-colors"
+                  href="#proximos-torneos"
+                  className="btn-shine uppercase bg-secondary text-white w-full sm:w-auto px-4 sm:px-8 py-4 rounded-[5px] font-label-bold text-label-bold text-center whitespace-nowrap transition-colors"
                 >
                   {t("torneos.ctaFullCalendar")}
-                </a>
-                <a
-                  href={whatsappHref("Hola CBVEM, quiero información sobre el reglamento de los torneos.")}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="border border-white/20 text-white w-full sm:w-auto px-4 sm:px-8 py-4 rounded-[5px] font-label-bold text-label-bold text-center whitespace-nowrap hover:bg-white/10 transition-all"
-                >
-                  {t("torneos.ctaRules")}
                 </a>
               </div>
             </ScrollReveal>
@@ -103,7 +92,7 @@ export function TorneosContent() {
         </section>
 
         {/* Upcoming */}
-        <section className="max-w-container-max mx-auto px-gutter mb-section-mobile md:mb-section-desktop">
+        <section id="proximos-torneos" className="scroll-mt-24 max-w-container-max mx-auto px-gutter mb-section-mobile md:mb-section-desktop">
           <ScrollReveal className="flex justify-between items-end mb-12">
             <div>
               <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase">
@@ -215,24 +204,24 @@ export function TorneosContent() {
           </div>
         </section>
 
-        {/* Community */}
+        {/* Become a coach CTA */}
         <section className="max-w-container-max mx-auto px-gutter py-section-mobile md:py-section-desktop">
-          <div className="bg-surface-container rounded-[5px] p-10 md:p-20 flex flex-col md:flex-row items-center justify-between gap-12">
-            <ScrollReveal className="max-w-lg">
-              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase leading-none mb-6">
-                {t("torneos.communityTitle")}
-              </h2>
-              <p className="font-body-lg text-body-lg text-on-surface-variant">
-                {t("torneos.communityText")}
-              </p>
-            </ScrollReveal>
-            <ScrollReveal delay={0.15} className="w-full max-w-md">
-              <NewsletterForm
-                placeholder={t("torneos.newsletterPlaceholder")}
-                buttonLabel={t("torneos.newsletterButton")}
-              />
-            </ScrollReveal>
-          </div>
+          <ScrollReveal className="bg-surface-container rounded-[5px] p-10 md:p-20 flex flex-col items-center text-center">
+            <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary uppercase leading-none mb-6 max-w-3xl">
+              {t("torneos.coachCtaTitle")}
+            </h2>
+            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
+              {t("torneos.coachCtaText")}
+            </p>
+            <a
+              href={whatsappHref("Hola BVM, me gustaría ser entrenador en el club. Te cuento sobre mí y mi experiencia:")}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-shine uppercase btn-glow bg-primary text-white w-full sm:w-auto px-10 py-4 rounded-[5px] font-label-bold text-label-bold text-center inline-block hover:bg-primary-container transition-colors"
+            >
+              {t("torneos.coachCtaButton")}
+            </a>
+          </ScrollReveal>
         </section>
       </main>
       <SiteFooter />

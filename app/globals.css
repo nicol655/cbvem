@@ -107,6 +107,68 @@ a {
   }
 }
 
+/* Twinkling halo + periodic light sweep on the navbar language flag */
+.flag-glow {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 3px;
+  animation: flag-glow-pulse 2.2s ease-in-out infinite;
+}
+
+.flag-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -120%;
+  width: 60%;
+  background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+  transform: skewX(-20deg);
+  animation: flag-sweep 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes flag-glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 203, 146, 0);
+  }
+  50% {
+    box-shadow: 0 0 10px 3px rgba(255, 203, 146, 0.9);
+  }
+}
+
+@keyframes flag-sweep {
+  0%,
+  55% {
+    left: -120%;
+  }
+  85%,
+  100% {
+    left: 160%;
+  }
+}
+
+
+/* Same twinkle as the navbar flag, for buttons: soft halo pulse + automatic light sweep */
+.btn-twinkle {
+  animation: flag-glow-pulse 2.2s ease-in-out infinite;
+}
+
+.btn-shine.btn-twinkle::after {
+  animation: flag-sweep 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flag-glow,
+  .flag-glow::after,
+  .btn-glow,
+  .btn-twinkle,
+  .btn-shine.btn-twinkle::after {
+    animation: none;
+  }
+}
+
 .floating-element {
   transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }

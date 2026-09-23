@@ -5,11 +5,9 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { useLanguage } from "@/components/LanguageProvider";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { asset } from "@/lib/asset";
 import { NAV_ITEMS, WHATSAPP_DEFAULT } from "@/lib/site";
-import type { Locale } from "@/lib/translations";
-
-const LOCALE_CYCLE: Locale[] = ["es", "en", "ca"];
 
 function isActivePath(pathname: string, href: string): boolean {
   const normalized = pathname.length > 1 ? pathname.replace(/\/$/, "") : pathname;
@@ -34,7 +32,7 @@ export function SiteNav({ transparentVariant = "light", transparentUntilVh }: Si
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { locale, setLocale, t } = useLanguage();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const onScroll = () => {
@@ -116,26 +114,21 @@ export function SiteNav({ transparentVariant = "light", transparentUntilVh }: Si
             })}
           </div>
 
-          <a
-            href={WHATSAPP_DEFAULT}
-            target="_blank"
-            rel="noreferrer"
-            className="btn-shine hidden md:block bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-3 rounded-[5px]"
-          >
-            {t("nav.cta")}
-          </a>
-
-          {/* Mobile-only: compact language toggle + hamburger */}
-          <div className="flex md:hidden items-center gap-2">
-            <button
-              type="button"
-              onClick={() => setLocale(LOCALE_CYCLE[(LOCALE_CYCLE.indexOf(locale) + 1) % LOCALE_CYCLE.length])}
-              aria-label={t("languageSwitcher.label")}
-              className={`flex items-center gap-1 px-2 py-1.5 rounded-[5px] font-label-bold text-[12px] transition-colors duration-300 ${mobileIconColor}`}
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher triggerClassName={scrolled ? "text-primary" : transparentText} />
+            <a
+              href={WHATSAPP_DEFAULT}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-shine uppercase btn-twinkle bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-3 rounded-[5px]"
             >
-              <span className="material-symbols-outlined text-[20px]">language</span>
-              {locale.toUpperCase()}
-            </button>
+              {t("nav.cta")}
+            </a>
+          </div>
+
+          {/* Mobile-only: language dropdown + hamburger */}
+          <div className="flex md:hidden items-center gap-2">
+            <LanguageSwitcher triggerClassName={mobileIconColor} />
 
             <button
               type="button"
@@ -178,7 +171,7 @@ export function SiteNav({ transparentVariant = "light", transparentUntilVh }: Si
             target="_blank"
             rel="noreferrer"
             onClick={() => setOpen(false)}
-            className="btn-shine block w-full text-center bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-4 rounded-[5px]"
+            className="btn-shine uppercase btn-twinkle block w-full text-center bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-4 rounded-[5px]"
           >
             {t("nav.cta")}
           </a>
@@ -197,7 +190,7 @@ export function SiteNav({ transparentVariant = "light", transparentUntilVh }: Si
           href={WHATSAPP_DEFAULT}
           target="_blank"
           rel="noreferrer"
-          className="btn-shine shrink-0 bg-secondary text-on-secondary font-label-bold text-label-bold px-6 py-2.5 rounded-[5px]"
+          className="btn-shine uppercase btn-twinkle shrink-0 bg-secondary text-on-secondary font-label-bold text-label-bold px-6 py-2.5 rounded-[5px]"
         >
           {t("nav.bookingBarCta")}
         </a>

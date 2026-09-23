@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { LanguageProvider } from "@/components/LanguageProvider";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export const metadata: Metadata = {
   title: "CBVEM | Club de Beach Volley El Masnou",
@@ -116,7 +115,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-surface-bright text-on-surface overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
         <LanguageProvider>
           {children}
-          <LanguageSwitcher />
         </LanguageProvider>
       </body>
     </html>

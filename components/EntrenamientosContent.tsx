@@ -59,7 +59,7 @@ export function EntrenamientosContent() {
 
         <ScrollReveal className="flex justify-center mt-16">
           <a
-            href={whatsappHref("Hola CBVEM, quiero que me ayudéis a saber en qué nivel encajo.")}
+            href={whatsappHref("Hola CBVEM, ¿me ayudáis a saber en qué nivel encajo?")}
             target="_blank"
             rel="noreferrer"
             className="text-secondary font-label-bold text-label-bold border-b-2 border-secondary hover:opacity-70 transition-opacity uppercase"
@@ -86,7 +86,7 @@ export function EntrenamientosContent() {
               <div className="bg-primary aspect-square overflow-hidden">
                 <img
                   className="w-full h-full object-cover opacity-80 hover:scale-110 transition-transform duration-700"
-                  alt="Balón de voley playa en la arena"
+                  alt="Balón de vóley playa en la arena"
                   src={asset("/images/mixto1.JPG")}
                 />
               </div>

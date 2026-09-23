@@ -89,11 +89,11 @@ export function OpenTryoutsSection() {
           <div className="flex flex-col items-center gap-4">
             <a
               href={whatsappHref(
-                "Hola CBVEM, quiero apuntarme a las pruebas de la Liga Nacional de Cataluña (Temporada 2027)."
+                "Hola CBVEM, me gustaría apuntarme a las pruebas de la Liga Nacional de Cataluña (temporada 2027)."
               )}
               target="_blank"
               rel="noreferrer"
-              className="btn-shine bg-secondary text-white px-10 py-4 rounded-[5px] font-label-bold text-label-bold transition-colors"
+              className="btn-shine uppercase bg-secondary text-white px-10 py-4 rounded-[5px] font-label-bold text-label-bold transition-colors"
             >
               {t("openTryouts.cta")}
             </a>

@@ -47,7 +47,7 @@ export default function HomePage() {
                   {t("home.bento.trainingText")}
                 </p>
                 <Link
-                  className="inline-block font-label-bold text-label-bold text-secondary border-b-2 border-secondary/20 group-hover:border-secondary transition-all"
+                  className="inline-block uppercase font-label-bold text-label-bold text-secondary border-b-2 border-secondary/20 group-hover:border-secondary transition-all"
                   href="/entrenamientos"
                 >
                   {t("home.bento.trainingCta")}
@@ -67,7 +67,7 @@ export default function HomePage() {
                   {t("home.bento.tournamentsText")}
                 </p>
                 <Link
-                  className="inline-block font-label-bold text-label-bold text-secondary border-b-2 border-secondary/20 group-hover:border-secondary transition-all"
+                  className="inline-block uppercase font-label-bold text-label-bold text-secondary border-b-2 border-secondary/20 group-hover:border-secondary transition-all"
                   href="/torneos"
                 >
                   {t("home.bento.tournamentsCta")}
@@ -87,7 +87,7 @@ export default function HomePage() {
                   {t("home.bento.campsText")}
                 </p>
                 <Link
-                  className="inline-block font-label-bold text-label-bold text-secondary border-b-2 border-secondary/20 group-hover:border-secondary transition-all"
+                  className="inline-block uppercase font-label-bold text-label-bold text-secondary border-b-2 border-secondary/20 group-hover:border-secondary transition-all"
                   href="/eventos-camps"
                 >
                   {t("home.bento.campsCta")}
@@ -122,7 +122,7 @@ export default function HomePage() {
                 href={WHATSAPP_DEFAULT}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-shine bg-secondary text-on-secondary font-label-bold text-label-bold px-10 py-4 rounded-[5px] shadow-lg inline-flex items-center gap-2"
+                className="btn-shine uppercase bg-secondary text-on-secondary font-label-bold text-label-bold px-10 py-4 rounded-[5px] shadow-lg inline-flex items-center gap-2"
               >
                 <span className="material-symbols-outlined">chat</span>
                 {t("home.lead.whatsapp")}

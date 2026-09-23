@@ -12,6 +12,28 @@ const CAMP_FORM_URL = {
   en: "https://docs.google.com/forms/d/196xIhiqAQyWa_FPlFmmjvtFmFPy5lt6jj9qQaWKckRM/viewform?edit_requested=true#responses"
 };
 
+type Clinic = {
+  key: string;
+  status: "completed" | "upcoming";
+  title: string;
+  text: string;
+  day?: string;
+  month?: string;
+};
+
+const CLINICS: Clinic[] = [
+  {
+    key: "julian",
+    status: "completed",
+    title: "eventosCamps.julianTitle",
+    text: "eventosCamps.julianText",
+    day: "20",
+    month: "eventosCamps.julianMonth"
+  },
+  { key: "tba-1", status: "upcoming", title: "eventosCamps.tbaTitle", text: "eventosCamps.tbaText" },
+  { key: "tba-2", status: "upcoming", title: "eventosCamps.tbaTitle", text: "eventosCamps.tbaText" }
+];
+
 export function EventosCampsContent() {
   const { t, locale } = useLanguage();
 
@@ -76,7 +98,7 @@ export function EventosCampsContent() {
                 href={CAMP_FORM_URL[locale]}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-shine w-full text-center bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-4 rounded-[5px]"
+                className="btn-shine uppercase w-full text-center bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-4 rounded-[5px]"
               >
                 {t("eventosCamps.cta")}
               </a>
@@ -96,68 +118,74 @@ export function EventosCampsContent() {
               </p>
             </ScrollReveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Clínic Julian */}
-              <ScrollReveal className="bg-surface-container-lowest p-8 rounded-[5px] border border-primary border-l-4 border-l-secondary shadow-[0_20px_45px_-10px_rgba(43,43,73,0.25)] relative overflow-hidden opacity-50 cursor-not-allowed flex flex-col">
-                <div className="flex justify-end items-start mb-6">
-                  <span className="material-symbols-outlined text-secondary">sports_volleyball</span>
-                </div>
-                <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("eventosCamps.julianTitle")}</h3>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-8">
-                  {t("eventosCamps.julianText")}
-                </p>
-                <div className="mt-auto pt-3 border-t border-secondary">
-                  <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider mb-1">
-                    {t("eventosCamps.dateLabel")}
-                  </p>
-                  <p className="font-headline-md text-primary">{t("eventosCamps.julianDate")}</p>
-                </div>
-              </ScrollReveal>
+              {CLINICS.map((clinic, i) => {
+                const completed = clinic.status === "completed";
+                return (
+                  <ScrollReveal
+                    key={clinic.key}
+                    delay={i * 0.1}
+                    className={`relative ${completed ? "" : "cursor-not-allowed"}`}
+                  >
+                    <article
+                      className={`group h-full bg-surface-container-lowest rounded-[5px] overflow-hidden relative flex flex-col ambient-shadow transition-transform duration-300 ${
+                        completed ? "hover:-translate-y-1" : "opacity-40 grayscale"
+                      }`}
+                    >
+                      {/* Date header */}
+                      <div className="relative bg-primary-container text-white px-8 pt-8 pb-7 overflow-hidden">
+                        <div className="absolute -right-10 -top-10 w-40 h-40 bg-secondary rounded-full opacity-15 blur-2xl pointer-events-none" />
+                        <img
+                          alt=""
+                          aria-hidden
+                          className="absolute right-6 top-6 h-9 w-9 object-contain opacity-80"
+                          src={asset("/images/newlogo_blanco.svg")}
+                        />
+                        <p className="font-label-bold text-[11px] uppercase tracking-[0.2em] text-on-primary-container mb-2">
+                          {t("eventosCamps.dateLabel")}
+                        </p>
+                        {clinic.day ? (
+                          <div className="flex items-end gap-3">
+                            <span className="font-display-lg text-[64px] leading-none">{clinic.day}</span>
+                            <span className="font-headline-md text-headline-md uppercase text-secondary-fixed pb-1">
+                              {t(clinic.month!)}
+                            </span>
+                          </div>
+                        ) : (
+                          <div className="flex items-end gap-3">
+                            <span className="font-display-lg text-[64px] leading-none text-white/40">?</span>
+                            <span className="font-headline-md text-headline-md uppercase text-white/60 pb-1">
+                              {t("eventosCamps.dateTbc")}
+                            </span>
+                          </div>
+                        )}
+                      </div>
 
-              {/* Clinic 2 — TBA */}
-              <ScrollReveal
-                delay={0.1}
-                className="bg-surface-container-lowest p-8 rounded-[5px] border border-primary border-l-4 border-l-gray-400 shadow-[0_20px_45px_-10px_rgba(43,43,73,0.25)] relative overflow-hidden opacity-50 cursor-not-allowed flex flex-col"
-              >
-                <div className="flex justify-between items-start mb-6">
-                  <span className="material-symbols-outlined text-on-surface-variant">shield</span>
-                  <span className="bg-secondary text-white px-3 py-1 rounded-[5px] font-label-bold text-[10px] uppercase">
-                    {t("eventosCamps.comingSoon")}
-                  </span>
-                </div>
-                <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("eventosCamps.tbaTitle")}</h3>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-8">
-                  {t("eventosCamps.tbaText")}
-                </p>
-                <div className="mt-auto pt-3 border-t border-gray-400">
-                  <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider mb-1">
-                    {t("eventosCamps.dateLabel")}
-                  </p>
-                  <p className="font-headline-md text-primary">—</p>
-                </div>
-              </ScrollReveal>
+                      {/* Body */}
+                      <div className="flex-1 flex flex-col p-8">
+                        <h3 className="font-headline-md text-headline-md text-primary uppercase mb-3">{t(clinic.title)}</h3>
+                        <p className="font-body-md text-body-md text-on-surface-variant mb-8">{t(clinic.text)}</p>
+                        <div className="mt-auto flex items-center gap-2 pt-5 border-t border-outline-variant/60">
+                          <span className={`w-2 h-2 rounded-full ${completed ? "bg-secondary" : "bg-outline"}`} />
+                          <span className="font-label-bold text-[12px] uppercase tracking-wider text-on-surface-variant">
+                            {t(completed ? "eventosCamps.completed" : "eventosCamps.comingSoon")}
+                          </span>
+                        </div>
+                      </div>
 
-              {/* Clinic 3 — TBA */}
-              <ScrollReveal
-                delay={0.2}
-                className="bg-surface-container-lowest p-8 rounded-[5px] border border-primary border-l-4 border-l-gray-400 shadow-[0_20px_45px_-10px_rgba(43,43,73,0.25)] relative overflow-hidden opacity-50 cursor-not-allowed flex flex-col"
-              >
-                <div className="flex justify-between items-start mb-6">
-                  <span className="material-symbols-outlined text-on-surface-variant">groups</span>
-                  <span className="bg-secondary text-white px-3 py-1 rounded-[5px] font-label-bold text-[10px] uppercase">
-                    {t("eventosCamps.comingSoon")}
-                  </span>
-                </div>
-                <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("eventosCamps.tbaTitle")}</h3>
-                <p className="font-body-md text-body-md text-on-surface-variant mb-8">
-                  {t("eventosCamps.tbaText")}
-                </p>
-                <div className="mt-auto pt-3 border-t border-gray-400">
-                  <p className="font-label-bold text-[10px] text-outline uppercase tracking-wider mb-1">
-                    {t("eventosCamps.dateLabel")}
-                  </p>
-                  <p className="font-headline-md text-primary">—</p>
-                </div>
-              </ScrollReveal>
+                      {/* "Completed" ribbon across the whole card */}
+                      {completed ? (
+                        <div className="absolute inset-0 bg-white/30 pointer-events-none">
+                          <div className="absolute inset-x-0 bottom-[16%] flex justify-center">
+                            <div className="w-[150%] shrink-0 -rotate-[12deg] bg-secondary text-white text-center py-3 font-headline-md text-headline-md uppercase tracking-[0.25em] shadow-[0_12px_30px_-6px_rgba(43,43,73,0.5)] border-y-2 border-white/40">
+                              {t("eventosCamps.completed")}
+                            </div>
+                          </div>
+                        </div>
+                      ) : null}
+                    </article>
+                  </ScrollReveal>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -172,10 +200,10 @@ export function EventosCampsContent() {
                 {t("eventosCamps.clinicsCtaText")}
               </h2>
               <a
-                href={whatsappHref("Quiero información para hacer un clinic/camp en la sede de BVM.")}
+                href={whatsappHref("Hola BVM, me gustaría que me informarais sobre cómo organizar un clínic o camp en vuestra sede.")}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-shine btn-glow bg-secondary text-white px-10 py-4 rounded-[5px] font-label-bold text-label-bold inline-block"
+                className="btn-shine uppercase btn-glow bg-secondary text-white px-10 py-4 rounded-[5px] font-label-bold text-label-bold inline-block"
               >
                 {t("eventosCamps.clinicsCtaButton")}
               </a>
