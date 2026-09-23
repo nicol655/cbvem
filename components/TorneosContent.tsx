@@ -35,7 +35,7 @@ const TOURNAMENTS = [
   },
   {
     nameKey: "eliteMasculino",
-    img: "/images/masculino-5.png",
+    img: "/images/masculino-5.jpg",
     dateBadge: "bg-primary text-white",
     featured: false,
     disabled: true,
