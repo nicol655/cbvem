@@ -76,10 +76,15 @@ export function SiteFooter() {
           <span>
             © {new Date().getFullYear()} {SITE.fullName}. {t("footer.rights")}
           </span>
-          <span className="flex items-center gap-2 self-start md:self-auto normal-case tracking-normal text-white">
+          <a
+            href="https://www.instagram.com/impulness.es/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 self-start md:self-auto normal-case tracking-normal text-white hover:opacity-70 transition-opacity"
+          >
             Design &amp; Developed by:
             <img alt="Impulness" className="h-5 w-auto" src={asset("/images/logoimpulness.png")} />
-          </span>
+          </a>
         </div>
       </div>
     </footer>
