@@ -1,7 +1,9 @@
 /*
  * Base + custom utilities that complement the Tailwind design tokens.
- * Colors, spacing, fonts and most styling come from Tailwind (see app/layout.tsx).
+ * Colors, spacing, fonts and most styling come from Tailwind (see tailwind.config.js).
  */
+
+@tailwind base;
 
 * {
   box-sizing: border-box;
@@ -203,3 +205,7 @@ a {
   background: rgba(125, 86, 40, 0.5);
   border-radius: 999px;
 }
+
+/* Utilities last so they win over the custom rules above, as with the old Play CDN. */
+@tailwind components;
+@tailwind utilities;

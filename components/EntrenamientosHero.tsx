@@ -33,6 +33,9 @@ export function EntrenamientosHero() {
           gsap.set(el, { yPercent: 150, rotate: imageTilt[i] ?? 0 });
         });
         gsap.set(videoBoxRef.current, { scale: 0.3, opacity: 0 });
+        // The row is hidden in the server HTML so the photos don't flash over the
+        // title before hydration; reveal it only once they're parked off-screen.
+        gsap.set(imagesRowRef.current, { visibility: "visible" });
 
         const tl = gsap.timeline({
           scrollTrigger: {
@@ -130,6 +133,7 @@ export function EntrenamientosHero() {
           <div
             ref={imagesRowRef}
             className="absolute inset-0 z-20 pointer-events-none flex items-center justify-center gap-24"
+            style={{ visibility: "hidden" }}
           >
             <div className="w-[32%] max-w-md aspect-[3/4] overflow-hidden shadow-2xl">
               <img

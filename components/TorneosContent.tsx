@@ -43,7 +43,7 @@ const TOURNAMENTS = [
 ];
 
 const COACHES = [
-  { img: "/images/David_foto.png", name: "David Martín", roleKey: "davidRole", objectPosition: undefined as string | undefined },
+  { img: "/images/David_foto.jpg", name: "David Martín", roleKey: "davidRole", objectPosition: undefined as string | undefined },
   {
     img: "/images/Oscar_Feltrer_crop.jpg",
     name: "Oscar Feltrer",
