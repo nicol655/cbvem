@@ -9,6 +9,7 @@ import { whatsappHref } from "@/lib/site";
 
 const CAMP_FORM_URL = {
   es: "https://docs.google.com/forms/d/e/1FAIpQLSfmTuH_A99AJSskvVvkv-EnYxwfTJ82y2CF982IMiGCt5Luuw/viewform",
+  ca: "https://docs.google.com/forms/d/e/1FAIpQLSfmTuH_A99AJSskvVvkv-EnYxwfTJ82y2CF982IMiGCt5Luuw/viewform",
   en: "https://docs.google.com/forms/d/196xIhiqAQyWa_FPlFmmjvtFmFPy5lt6jj9qQaWKckRM/viewform?edit_requested=true#responses"
 };
 
