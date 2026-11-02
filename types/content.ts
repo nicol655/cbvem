@@ -37,3 +37,20 @@ export type PageContent = {
   };
   contact: ContactConfig;
 };
+
+export type LegalSlug = "aviso-legal" | "politica-de-privacidad" | "cookies";
+
+export type LegalSection = {
+  heading: string;
+  paragraphs?: string[];
+  items?: string[];
+  table?: { headers: string[]; rows: string[][] };
+  after?: string[];
+};
+
+export type LegalDocument = {
+  title: string;
+  sections: LegalSection[];
+};
+
+export type LegalContent = { lastUpdatedLabel: string } & Record<LegalSlug, LegalDocument>;

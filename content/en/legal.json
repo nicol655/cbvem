@@ -1,0 +1,150 @@
+{
+  "lastUpdatedLabel": "Last updated",
+  "aviso-legal": {
+    "title": "Legal notice",
+    "sections": [
+      {
+        "heading": "1. Owner details",
+        "paragraphs": [
+          "In accordance with article 10 of Spanish Law 34/2002 of 11 July on Information Society Services and Electronic Commerce (LSSI-CE), this website is owned by {owner}, tax ID (NIF/CIF) {taxId}, registered address {address}, email {email}, registered in the Sports Entities Register of the Government of Catalonia (Registre d'Entitats Esportives) under no. {sportsRegistry}."
+        ]
+      },
+      {
+        "heading": "2. Purpose",
+        "paragraphs": [
+          "This website provides information about the club, its training sessions, tournaments, events and camps, and lets you contact the club and request a trial class."
+        ]
+      },
+      {
+        "heading": "3. Terms of use",
+        "paragraphs": [
+          "Users agree to use the website properly and lawfully, without harming its operation or the club's image."
+        ]
+      },
+      {
+        "heading": "4. Intellectual and industrial property",
+        "paragraphs": [
+          "The texts, images, logos, designs and other content belong to the club or are used with permission, and may not be reproduced or distributed without the club's express consent."
+        ]
+      },
+      {
+        "heading": "5. Liability",
+        "paragraphs": [
+          "The club makes every effort to keep the information accurate and up to date, but does not guarantee that it is error-free or that the website will be available without interruption. The club is not responsible for the content of linked third-party websites."
+        ]
+      },
+      {
+        "heading": "6. Governing law and jurisdiction",
+        "paragraphs": [
+          "This website is governed by Spanish law. Any dispute will be submitted to the courts and tribunals that have jurisdiction under the applicable regulations."
+        ]
+      }
+    ]
+  },
+  "politica-de-privacidad": {
+    "title": "Privacy policy",
+    "sections": [
+      {
+        "heading": "1. Data controller",
+        "paragraphs": ["{owner}, tax ID (NIF/CIF) {taxId}, {address}. Email: {email}."]
+      },
+      {
+        "heading": "2. Purposes",
+        "items": [
+          "To handle your request for a free trial class and contact you to arrange it.",
+          "To answer the questions you send us by email or WhatsApp.",
+          "To manage your registration for the club's camps, tournaments and events through the registration forms."
+        ]
+      },
+      {
+        "heading": "3. Legal basis",
+        "paragraphs": [
+          "Your consent (art. 6.1.a GDPR) and, for the trial class and registrations, taking steps at your request prior to entering into a contract or performing that contract (art. 6.1.b GDPR)."
+        ]
+      },
+      {
+        "heading": "4. Data we process",
+        "paragraphs": [
+          "The data you give us by email, by WhatsApp or in the registration forms: name, contact details, playing level, message and anything else you choose to share."
+        ]
+      },
+      {
+        "heading": "5. Retention period",
+        "paragraphs": [
+          "For as long as needed to handle your request and, afterwards, for the limitation period of any possible legal liabilities."
+        ]
+      },
+      {
+        "heading": "6. Recipients",
+        "paragraphs": [
+          "We do not share your data with third parties unless required by law. Service providers working for the club have access to it under a data processing agreement: web hosting, {hostingProvider}; email, {emailProvider}.",
+          "The registration forms for camps, tournaments and events run on Google Forms (Google Ireland Limited). Google may process data outside the European Economic Area under the safeguards of the EU-US Data Privacy Framework and the European Commission's standard contractual clauses.",
+          "If you write to us on WhatsApp, your data is also processed by WhatsApp under its own privacy policy."
+        ]
+      },
+      {
+        "heading": "7. Minors",
+        "paragraphs": [
+          "Children under 14 need their parents' or guardians' consent to send us their data. In that case, the request or registration must be sent and accepted by the person with parental authority or legal guardianship."
+        ]
+      },
+      {
+        "heading": "8. Your rights",
+        "paragraphs": [
+          "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to {email} and proving your identity. You can withdraw your consent at any time.",
+          "If you believe we have not handled your data properly, you can lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookie policy",
+    "sections": [
+      {
+        "heading": "1. What cookies are",
+        "paragraphs": [
+          "Cookies are small files stored on your device when you visit a website. This policy also covers similar technologies, such as the browser's local storage (localStorage) and pixels."
+        ]
+      },
+      {
+        "heading": "2. Cookies we use",
+        "paragraphs": [
+          "This website currently uses only technical storage that it needs to work. We do not use analytics or marketing cookies."
+        ],
+        "table": {
+          "headers": ["Name", "Owner", "Purpose", "Duration", "Category"],
+          "rows": [
+            ["cbvem-locale", "First party", "Remember the language you choose", "Until you clear your browser data", "Technical (localStorage)"],
+            ["cbvem-cookie-consent", "First party", "Store your cookie choice and the date you made it", "24 months", "Technical (localStorage)"]
+          ]
+        },
+        "after": [
+          "Third-party resources: to display its typefaces, the website loads fonts from Google Fonts (Google Ireland Limited). This service does not set cookies, but it receives your device's IP address in order to send you the files.",
+          "Links to external services (Google Maps, WhatsApp, Instagram and Google Forms) do not load anything until you click them. From then on, those services' own privacy and cookie policies apply."
+        ]
+      },
+      {
+        "heading": "3. Technical cookies and consent",
+        "paragraphs": [
+          "Technical cookies are needed for the website to work and do not require consent. Analytics and marketing cookies are only set if you accept them."
+        ]
+      },
+      {
+        "heading": "4. How to manage or withdraw your consent",
+        "paragraphs": [
+          "You can change or withdraw your consent at any time from the “Cookie settings” link in the footer or from your browser settings."
+        ]
+      },
+      {
+        "heading": "5. How long your consent lasts",
+        "paragraphs": [
+          "We store your choice and ask you again at least every 24 months."
+        ]
+      },
+      {
+        "heading": "6. Controller",
+        "paragraphs": ["{owner}, {email}."]
+      }
+    ]
+  }
+}

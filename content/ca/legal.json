@@ -1,0 +1,150 @@
+{
+  "lastUpdatedLabel": "Darrera actualització",
+  "aviso-legal": {
+    "title": "Avís legal",
+    "sections": [
+      {
+        "heading": "1. Dades identificatives",
+        "paragraphs": [
+          "En compliment de l'article 10 de la Llei 34/2002, d'11 de juliol, de serveis de la societat de la informació i de comerç electrònic (LSSI-CE), s'informa que aquest lloc web és titularitat de {owner}, amb NIF/CIF {taxId}, domicili a {address} i correu electrònic {email}, inscrita al Registre d'Entitats Esportives de la Generalitat de Catalunya amb el núm. {sportsRegistry}."
+        ]
+      },
+      {
+        "heading": "2. Objecte",
+        "paragraphs": [
+          "El lloc web ofereix informació sobre el club, els seus entrenaments, tornejos, esdeveniments i camps, i permet contactar amb el club i sol·licitar una classe de prova."
+        ]
+      },
+      {
+        "heading": "3. Condicions d'ús",
+        "paragraphs": [
+          "L'usuari es compromet a fer un ús adequat i lícit del lloc, sense perjudicar-ne el funcionament ni la imatge del club."
+        ]
+      },
+      {
+        "heading": "4. Propietat intel·lectual i industrial",
+        "paragraphs": [
+          "Els textos, imatges, logotips, dissenys i la resta de continguts són del club o s'utilitzen amb autorització, i no es poden reproduir ni distribuir sense el seu permís exprés."
+        ]
+      },
+      {
+        "heading": "5. Responsabilitat",
+        "paragraphs": [
+          "El club procura que la informació sigui exacta i estigui actualitzada, però no garanteix l'absència d'errors ni la disponibilitat ininterrompuda del lloc. No es fa responsable del contingut de webs de tercers enllaçades."
+        ]
+      },
+      {
+        "heading": "6. Legislació i jurisdicció",
+        "paragraphs": [
+          "Aquest lloc web es regeix per la legislació espanyola. Per a qualsevol controvèrsia, les parts se sotmetran als jutjats i tribunals que corresponguin d'acord amb la normativa aplicable."
+        ]
+      }
+    ]
+  },
+  "politica-de-privacidad": {
+    "title": "Política de privacitat",
+    "sections": [
+      {
+        "heading": "1. Responsable del tractament",
+        "paragraphs": ["{owner}, NIF/CIF {taxId}, {address}. Correu electrònic: {email}."]
+      },
+      {
+        "heading": "2. Finalitats",
+        "items": [
+          "Gestionar la teva sol·licitud de classe de prova gratuïta i comunicar-nos amb tu per organitzar-la.",
+          "Atendre les consultes que ens enviïs per correu electrònic o per WhatsApp.",
+          "Gestionar la teva inscripció als camps, tornejos i esdeveniments del club a través dels formularis d'inscripció."
+        ]
+      },
+      {
+        "heading": "3. Base jurídica",
+        "paragraphs": [
+          "El teu consentiment (art. 6.1.a RGPD) i, en la gestió de la classe de prova i de les inscripcions, l'aplicació de mesures precontractuals o l'execució del contracte a petició teva (art. 6.1.b RGPD)."
+        ]
+      },
+      {
+        "heading": "4. Dades que tractem",
+        "paragraphs": [
+          "Les que ens facilites per correu electrònic, per WhatsApp o als formularis d'inscripció: nom, dades de contacte, nivell de joc, missatge i les que decideixis aportar."
+        ]
+      },
+      {
+        "heading": "5. Termini de conservació",
+        "paragraphs": [
+          "El temps necessari per gestionar la teva sol·licitud i, després, durant el termini de prescripció de possibles responsabilitats legals."
+        ]
+      },
+      {
+        "heading": "6. Destinataris",
+        "paragraphs": [
+          "No cedim les teves dades a tercers excepte per obligació legal. Hi accedeixen, amb contracte d'encarregat del tractament, els proveïdors que presten serveis al club: allotjament web, {hostingProvider}; correu electrònic, {emailProvider}.",
+          "Els formularis d'inscripció de camps, tornejos i esdeveniments funcionen amb Google Forms (Google Ireland Limited). Google pot tractar dades fora de l'Espai Econòmic Europeu amb les garanties del Marc de Privacitat de Dades UE-EUA i de les clàusules contractuals tipus de la Comissió Europea.",
+          "Si ens escrius per WhatsApp, les teves dades també les tracta WhatsApp d'acord amb la seva pròpia política de privacitat."
+        ]
+      },
+      {
+        "heading": "7. Menors",
+        "paragraphs": [
+          "Els menors de 14 anys necessiten el consentiment dels pares o tutors per enviar-nos les seves dades. En aquest cas, la sol·licitud o la inscripció l'ha d'enviar i acceptar qui exerceixi la pàtria potestat o la tutela."
+        ]
+      },
+      {
+        "heading": "8. Drets",
+        "paragraphs": [
+          "Pots exercir els teus drets d'accés, rectificació, supressió, oposició, limitació i portabilitat escrivint a {email} i acreditant la teva identitat. Pots retirar el teu consentiment en qualsevol moment.",
+          "Si consideres que no hem tractat bé les teves dades, pots presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (www.aepd.es)."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Política de galetes",
+    "sections": [
+      {
+        "heading": "1. Què són les galetes",
+        "paragraphs": [
+          "Les galetes (cookies) són petits fitxers que es desen al teu dispositiu quan visites un web. En aquesta política també hi incloem tecnologies similars, com l'emmagatzematge local del navegador (localStorage) o els píxels."
+        ]
+      },
+      {
+        "heading": "2. Galetes que fem servir",
+        "paragraphs": [
+          "Actualment aquest web només fa servir tecnologies tècniques, necessàries per al seu funcionament. No fem servir galetes analítiques ni de màrqueting."
+        ],
+        "table": {
+          "headers": ["Nom", "Titular", "Finalitat", "Durada", "Categoria"],
+          "rows": [
+            ["cbvem-locale", "Pròpia", "Recordar l'idioma que tries", "Fins que esborris les dades del navegador", "Tècnica (localStorage)"],
+            ["cbvem-cookie-consent", "Pròpia", "Desar la teva elecció sobre galetes i la data en què la vas fer", "24 mesos", "Tècnica (localStorage)"]
+          ]
+        },
+        "after": [
+          "Recursos de tercers: per mostrar les tipografies, el web carrega fonts de Google Fonts (Google Ireland Limited). Aquest servei no instal·la galetes, però rep l'adreça IP del teu dispositiu per enviar-te els fitxers.",
+          "Els enllaços a serveis externs (Google Maps, WhatsApp, Instagram i Google Forms) no carreguen res fins que hi fas clic. A partir d'aquell moment s'apliquen les polítiques de privacitat i de galetes d'aquests serveis."
+        ]
+      },
+      {
+        "heading": "3. Galetes tècniques i consentiment",
+        "paragraphs": [
+          "Les galetes tècniques són necessàries per al funcionament del web i no requereixen consentiment. Les analítiques i de màrqueting només s'instal·len si les acceptes."
+        ]
+      },
+      {
+        "heading": "4. Com gestionar o retirar el consentiment",
+        "paragraphs": [
+          "Pots canviar o retirar el teu consentiment en qualsevol moment des de l'enllaç «Configurar galetes» del peu de pàgina o des de la configuració del teu navegador."
+        ]
+      },
+      {
+        "heading": "5. Durada del consentiment",
+        "paragraphs": [
+          "Desem la teva elecció i te la tornem a demanar, com a màxim, cada 24 mesos."
+        ]
+      },
+      {
+        "heading": "6. Responsable",
+        "paragraphs": ["{owner}, {email}."]
+      }
+    ]
+  }
+}

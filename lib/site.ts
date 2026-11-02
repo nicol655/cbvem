@@ -9,6 +9,25 @@ export const SITE = {
   mapsUrl: "https://maps.app.goo.gl/6dmKtwxzSowLXQes5"
 };
 
+// Legal owner data shown in Aviso legal / Privacidad / Cookies. Values still in
+// [BRACKETS] are pending and must be filled in before they are legally valid.
+export const LEGAL = {
+  owner: "Club Volei Platja Masnou (en constitución)",
+  taxId: "G26998914",
+  address: "Carrer Sant Lluís, 4, 08320 El Masnou (Barcelona)",
+  email: SITE.email,
+  sportsRegistry: "[N.º REGISTRE D'ENTITATS ESPORTIVES]",
+  hostingProvider: "Amazon Web Services (AWS)",
+  emailProvider: "Google (Gmail)",
+  lastUpdated: "02/11/2026"
+};
+
+export const LEGAL_LINKS = [
+  { key: "legalNotice", href: "/aviso-legal" },
+  { key: "privacy", href: "/politica-de-privacidad" },
+  { key: "cookies", href: "/cookies" }
+] as const;
+
 export const NAV_ITEMS = [
   { key: "home", href: "/" },
   { key: "training", href: "/entrenamientos" },

@@ -21,7 +21,29 @@ export const translations = {
       explore: "Explorar",
       contact: "Contacto",
       rights: "Todos los derechos reservados.",
-      madeWith: "Hecho con pasión en El Masnou"
+      madeWith: "Hecho con pasión en El Masnou",
+      legalNotice: "Aviso legal",
+      privacy: "Privacidad",
+      cookies: "Cookies",
+      cookieSettings: "Configurar cookies"
+    },
+    cookieConsent: {
+      title: "Usamos cookies",
+      text: "Usamos cookies técnicas necesarias para que la web funcione. Con tu permiso, también podríamos usar cookies analíticas y de marketing. Puedes aceptarlas, rechazarlas o elegir cuáles permites.",
+      settingsTitle: "Configurar cookies",
+      settingsText: "Elige qué categorías permites. Puedes cambiar tu elección cuando quieras desde «Configurar cookies» en el pie de página.",
+      policyLink: "Política de cookies",
+      accept: "Aceptar",
+      reject: "Rechazar",
+      configure: "Configurar",
+      save: "Guardar selección",
+      alwaysActive: "Siempre activas",
+      technicalTitle: "Técnicas",
+      technicalText: "Necesarias para el funcionamiento de la web, como recordar tu idioma y tu elección de cookies.",
+      analyticsTitle: "Analíticas",
+      analyticsText: "Nos ayudan a entender cómo se usa la web para mejorarla.",
+      marketingTitle: "Marketing",
+      marketingText: "Permiten mostrarte publicidad relevante y medir campañas."
     },
     languageSwitcher: {
       label: "Idioma",
@@ -202,6 +224,7 @@ export const translations = {
       featuredDate: "DEL 21 AL 24 DE ENERO DE 2027",
       featuredText:
         "Cuatro días en Tenerife con doble sesión diaria, análisis de vídeo personalizado y preparación física específica para arena.",
+      priceCampOnly: "/ solo camp",
       priceTriple: "/ habitación triple",
       priceDouble: "/ habitación doble",
       cta: "Apúntate",
@@ -251,7 +274,29 @@ export const translations = {
       explore: "Explore",
       contact: "Contact",
       rights: "All rights reserved.",
-      madeWith: "Made with passion in El Masnou"
+      madeWith: "Made with passion in El Masnou",
+      legalNotice: "Legal notice",
+      privacy: "Privacy",
+      cookies: "Cookies",
+      cookieSettings: "Cookie settings"
+    },
+    cookieConsent: {
+      title: "We use cookies",
+      text: "We use technical cookies that the website needs to work. With your permission, we could also use analytics and marketing cookies. You can accept them, reject them or choose which ones you allow.",
+      settingsTitle: "Cookie settings",
+      settingsText: "Choose which categories you allow. You can change your choice at any time from “Cookie settings” in the footer.",
+      policyLink: "Cookie policy",
+      accept: "Accept",
+      reject: "Reject",
+      configure: "Settings",
+      save: "Save selection",
+      alwaysActive: "Always active",
+      technicalTitle: "Technical",
+      technicalText: "Needed for the website to work, such as remembering your language and your cookie choice.",
+      analyticsTitle: "Analytics",
+      analyticsText: "Help us understand how the website is used so we can improve it.",
+      marketingTitle: "Marketing",
+      marketingText: "Allow us to show you relevant advertising and measure campaigns."
     },
     languageSwitcher: {
       label: "Language",
@@ -429,6 +474,7 @@ export const translations = {
       featuredDate: "JANUARY 21 - 24, 2027",
       featuredText:
         "Full immersion in Tenerife with two daily sessions, personalized video analysis and sand-specific physical preparation.",
+      priceCampOnly: "/ camp only",
       priceTriple: "/ triple room",
       priceDouble: "/ double room",
       cta: "Sign up",
@@ -474,7 +520,29 @@ export const translations = {
       explore: "Explora",
       contact: "Contacte",
       rights: "Tots els drets reservats.",
-      madeWith: "Fet amb passió a El Masnou"
+      madeWith: "Fet amb passió a El Masnou",
+      legalNotice: "Avís legal",
+      privacy: "Privacitat",
+      cookies: "Galetes",
+      cookieSettings: "Configurar galetes"
+    },
+    cookieConsent: {
+      title: "Fem servir galetes",
+      text: "Fem servir galetes tècniques necessàries perquè el web funcioni. Amb el teu permís, també podríem fer servir galetes analítiques i de màrqueting. Pots acceptar-les, rebutjar-les o triar quines permets.",
+      settingsTitle: "Configurar galetes",
+      settingsText: "Tria quines categories permets. Pots canviar la teva elecció quan vulguis des de «Configurar galetes» al peu de pàgina.",
+      policyLink: "Política de galetes",
+      accept: "Acceptar",
+      reject: "Rebutjar",
+      configure: "Configurar",
+      save: "Desar la selecció",
+      alwaysActive: "Sempre actives",
+      technicalTitle: "Tècniques",
+      technicalText: "Necessàries perquè el web funcioni, com recordar el teu idioma i la teva elecció de galetes.",
+      analyticsTitle: "Analítiques",
+      analyticsText: "Ens ajuden a entendre com es fa servir el web per millorar-lo.",
+      marketingTitle: "Màrqueting",
+      marketingText: "Permeten mostrar-te publicitat rellevant i mesurar campanyes."
     },
     languageSwitcher: {
       label: "Idioma",
@@ -655,6 +723,7 @@ export const translations = {
       featuredDate: "21 - 24 DE GENER 2027",
       featuredText:
         "Immersió total a Tenerife amb doble sessió diària, anàlisi de vídeo personalitzat i preparació física específica per a sorra.",
+      priceCampOnly: "/ només camp",
       priceTriple: "/ habitació triple",
       priceDouble: "/ habitació doble",
       cta: "Apuntar-se",

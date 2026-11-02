@@ -4,7 +4,8 @@ import Link from "next/link";
 
 import { useLanguage } from "@/components/LanguageProvider";
 import { asset } from "@/lib/asset";
-import { NAV_ITEMS, SITE, WHATSAPP_DEFAULT } from "@/lib/site";
+import { OPEN_CONSENT_EVENT } from "@/lib/consent";
+import { LEGAL_LINKS, NAV_ITEMS, SITE, WHATSAPP_DEFAULT } from "@/lib/site";
 
 export function SiteFooter() {
   const { t } = useLanguage();
@@ -76,15 +77,31 @@ export function SiteFooter() {
           <span>
             © {new Date().getFullYear()} {SITE.fullName}. {t("footer.rights")}
           </span>
-          <a
-            href="https://www.instagram.com/impulness.es/"
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 self-start md:self-auto normal-case tracking-normal text-white hover:opacity-70 transition-opacity"
-          >
-            Design &amp; Developed by:
-            <img alt="Impulness" className="h-5 w-auto" src={asset("/images/logoimpulness.png")} />
-          </a>
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <nav aria-label="Legal" className="flex flex-wrap justify-center gap-x-5 gap-y-2 normal-case tracking-normal">
+              {LEGAL_LINKS.map((item) => (
+                <Link key={item.href} href={item.href} className="hover:text-secondary-fixed transition-colors">
+                  {t(`footer.${item.key}`)}
+                </Link>
+              ))}
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new Event(OPEN_CONSENT_EVENT))}
+                className="normal-case tracking-normal hover:text-secondary-fixed transition-colors"
+              >
+                {t("footer.cookieSettings")}
+              </button>
+            </nav>
+            <a
+              href="https://www.instagram.com/impulness.es/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 self-start md:self-auto normal-case tracking-normal text-white hover:opacity-70 transition-opacity"
+            >
+              Design &amp; Developed by:
+              <img alt="Impulness" className="h-5 w-auto" src={asset("/images/logoimpulness.png")} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

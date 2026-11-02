@@ -87,11 +87,15 @@ export function EventosCampsContent() {
               </p>
               <div className="flex flex-col gap-2 mb-10">
                 <div className="flex items-baseline gap-2">
-                  <span className="font-headline-lg text-headline-lg-mobile text-secondary">380€</span>
-                  <span className="font-body-md text-body-md text-outline">{t("eventosCamps.priceTriple")}</span>
+                  <span className="font-headline-lg text-headline-lg-mobile text-secondary">180€</span>
+                  <span className="font-body-md text-body-md text-outline">{t("eventosCamps.priceCampOnly")}</span>
                 </div>
                 <div className="flex items-baseline gap-2">
                   <span className="font-headline-lg text-headline-lg-mobile text-secondary">420€</span>
+                  <span className="font-body-md text-body-md text-outline">{t("eventosCamps.priceTriple")}</span>
+                </div>
+                <div className="flex items-baseline gap-2">
+                  <span className="font-headline-lg text-headline-lg-mobile text-secondary">460€</span>
                   <span className="font-body-md text-body-md text-outline">{t("eventosCamps.priceDouble")}</span>
                 </div>
               </div>

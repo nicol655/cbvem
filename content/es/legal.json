@@ -1,0 +1,150 @@
+{
+  "lastUpdatedLabel": "Última actualización",
+  "aviso-legal": {
+    "title": "Aviso legal",
+    "sections": [
+      {
+        "heading": "1. Datos identificativos",
+        "paragraphs": [
+          "En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que este sitio web es titularidad de {owner}, con NIF/CIF {taxId}, domicilio en {address} y correo electrónico {email}, inscrita en el Registre d'Entitats Esportives de la Generalitat de Catalunya con el n.º {sportsRegistry}."
+        ]
+      },
+      {
+        "heading": "2. Objeto",
+        "paragraphs": [
+          "El sitio web ofrece información sobre el club, sus entrenamientos, torneos, eventos y camps, y permite contactar con el club y solicitar una clase de prueba."
+        ]
+      },
+      {
+        "heading": "3. Condiciones de uso",
+        "paragraphs": [
+          "El usuario se compromete a hacer un uso adecuado y lícito del sitio, sin dañar su funcionamiento ni la imagen del club."
+        ]
+      },
+      {
+        "heading": "4. Propiedad intelectual e industrial",
+        "paragraphs": [
+          "Los textos, imágenes, logotipos, diseños y demás contenidos son del club o se usan con autorización, y no pueden reproducirse ni distribuirse sin su permiso expreso."
+        ]
+      },
+      {
+        "heading": "5. Responsabilidad",
+        "paragraphs": [
+          "El club procura que la información sea exacta y esté actualizada, pero no garantiza la ausencia de errores ni la disponibilidad ininterrumpida del sitio. No se responsabiliza del contenido de webs de terceros enlazadas."
+        ]
+      },
+      {
+        "heading": "6. Legislación y jurisdicción",
+        "paragraphs": [
+          "Este sitio web se rige por la legislación española. Para cualquier controversia, las partes se someterán a los juzgados y tribunales que correspondan conforme a la normativa aplicable."
+        ]
+      }
+    ]
+  },
+  "politica-de-privacidad": {
+    "title": "Política de privacidad",
+    "sections": [
+      {
+        "heading": "1. Responsable del tratamiento",
+        "paragraphs": ["{owner}, NIF/CIF {taxId}, {address}. Correo electrónico: {email}."]
+      },
+      {
+        "heading": "2. Finalidades",
+        "items": [
+          "Gestionar tu solicitud de clase de prueba gratuita y comunicarnos contigo para organizarla.",
+          "Atender las consultas que nos envíes por correo electrónico o por WhatsApp.",
+          "Gestionar tu inscripción en los camps, torneos y eventos del club a través de los formularios de inscripción."
+        ]
+      },
+      {
+        "heading": "3. Base jurídica",
+        "paragraphs": [
+          "Tu consentimiento (art. 6.1.a RGPD) y, en la gestión de la clase de prueba y de las inscripciones, la aplicación de medidas precontractuales o la ejecución del contrato a petición tuya (art. 6.1.b RGPD)."
+        ]
+      },
+      {
+        "heading": "4. Datos que tratamos",
+        "paragraphs": [
+          "Los que nos facilitas por correo electrónico, por WhatsApp o en los formularios de inscripción: nombre, datos de contacto, nivel de juego, mensaje y los que decidas aportar."
+        ]
+      },
+      {
+        "heading": "5. Plazo de conservación",
+        "paragraphs": [
+          "El tiempo necesario para gestionar tu solicitud y, después, durante el plazo de prescripción de posibles responsabilidades legales."
+        ]
+      },
+      {
+        "heading": "6. Destinatarios",
+        "paragraphs": [
+          "No cedemos tus datos a terceros salvo obligación legal. Acceden a ellos, con contrato de encargado del tratamiento, los proveedores que prestan servicios al club: alojamiento web, {hostingProvider}; correo electrónico, {emailProvider}.",
+          "Los formularios de inscripción de camps, torneos y eventos funcionan con Google Forms (Google Ireland Limited). Google puede tratar datos fuera del Espacio Económico Europeo con las garantías del Marco de Privacidad de Datos UE-EE. UU. y de las cláusulas contractuales tipo de la Comisión Europea.",
+          "Si nos escribes por WhatsApp, tus datos también son tratados por WhatsApp según su propia política de privacidad."
+        ]
+      },
+      {
+        "heading": "7. Menores",
+        "paragraphs": [
+          "Los menores de 14 años necesitan el consentimiento de sus padres o tutores para enviarnos sus datos. En ese caso, la solicitud o la inscripción debe enviarla y aceptarla quien ejerza la patria potestad o la tutela."
+        ]
+      },
+      {
+        "heading": "8. Derechos",
+        "paragraphs": [
+          "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a {email} y acreditando tu identidad. Puedes retirar tu consentimiento en cualquier momento.",
+          "Si consideras que no hemos tratado bien tus datos, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Política de cookies",
+    "sections": [
+      {
+        "heading": "1. Qué son las cookies",
+        "paragraphs": [
+          "Las cookies son pequeños archivos que se almacenan en tu dispositivo al visitar una web. En esta política también incluimos tecnologías similares, como el almacenamiento local del navegador (localStorage) o los píxeles."
+        ]
+      },
+      {
+        "heading": "2. Cookies que usamos",
+        "paragraphs": [
+          "Actualmente esta web solo utiliza tecnologías técnicas, necesarias para su funcionamiento. No utilizamos cookies analíticas ni de marketing."
+        ],
+        "table": {
+          "headers": ["Nombre", "Titular", "Finalidad", "Duración", "Categoría"],
+          "rows": [
+            ["cbvem-locale", "Propia", "Recordar el idioma que eliges", "Hasta que borres los datos del navegador", "Técnica (localStorage)"],
+            ["cbvem-cookie-consent", "Propia", "Guardar tu elección sobre cookies y la fecha en que la hiciste", "24 meses", "Técnica (localStorage)"]
+          ]
+        },
+        "after": [
+          "Recursos de terceros: para mostrar las tipografías, la web carga fuentes de Google Fonts (Google Ireland Limited). Este servicio no instala cookies, pero recibe la dirección IP de tu dispositivo para enviarte los archivos.",
+          "Los enlaces a servicios externos (Google Maps, WhatsApp, Instagram y Google Forms) no cargan nada hasta que haces clic en ellos. A partir de ese momento se aplican las políticas de privacidad y de cookies de esos servicios."
+        ]
+      },
+      {
+        "heading": "3. Cookies técnicas y consentimiento",
+        "paragraphs": [
+          "Las cookies técnicas son necesarias para el funcionamiento de la web y no requieren consentimiento. Las analíticas y de marketing solo se instalan si las aceptas."
+        ]
+      },
+      {
+        "heading": "4. Cómo gestionar o retirar tu consentimiento",
+        "paragraphs": [
+          "Puedes cambiar o retirar tu consentimiento en cualquier momento desde el enlace «Configurar cookies» del pie de página o desde los ajustes de tu navegador."
+        ]
+      },
+      {
+        "heading": "5. Duración del consentimiento",
+        "paragraphs": [
+          "Guardamos tu elección y te la volvemos a pedir, como máximo, cada 24 meses."
+        ]
+      },
+      {
+        "heading": "6. Responsable",
+        "paragraphs": ["{owner}, {email}."]
+      }
+    ]
+  }
+}

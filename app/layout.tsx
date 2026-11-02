@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import { CookieConsent } from "@/components/CookieConsent";
 import { LanguageProvider } from "@/components/LanguageProvider";
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-surface-bright text-on-surface overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
         <LanguageProvider>
           {children}
+          <CookieConsent />
         </LanguageProvider>
       </body>
     </html>
